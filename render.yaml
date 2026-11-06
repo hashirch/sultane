@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: sultane-api
+    runtime: node
+    plan: free
+    buildCommand: npm ci --prefix database && npm ci --prefix backend && npm run build --prefix backend
+    startCommand: npm run start --prefix backend
+    healthCheckPath: /health
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CORS_ORIGIN
+        sync: false
+      - key: NODE_ENV
+        value: production

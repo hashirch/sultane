@@ -40,6 +40,18 @@ Open the frontend URL. Admin dashboard is at `/admin/login` — the seed script 
 
 For production or Docker deployment, set `JWT_SECRET` to a long, random value and provide the production `DATABASE_URL`; neither is configured in the image.
 
+## Free deployment
+
+The repository includes a GitHub Pages workflow for the frontend and a Render blueprint for the API:
+
+1. Create a free PostgreSQL database on Neon and copy its connection string.
+2. In Render, create a Blueprint from this repository using `render.yaml`. Set `DATABASE_URL` to the Neon connection string and `CORS_ORIGIN` to `https://hashirch.github.io`.
+3. Run the database migration and seed against Neon using the `database` package, then note the Render API URL.
+4. In GitHub repository Settings → Secrets and variables → Actions → Variables, add `VITE_API_URL` with the Render API URL plus `/api`, for example `https://sultane-api.onrender.com/api`.
+5. In GitHub repository Settings → Pages, select **GitHub Actions** as the source. Pushes to `main` will deploy the frontend at `https://hashirch.github.io/sultane/`.
+
+Free services can sleep when idle and have usage limits. The API's local upload directory is ephemeral on free hosting, so uploaded files should move to object storage before production use.
+
 ## Why three packages instead of one
 
 `database/` owns the schema and has no business knowing about Express or React — it's a deployment-time concern (migrate once, before anything else starts), not a runtime one. `backend/` only keeps the thin query client it needs at request time (`backend/src/db/pool.ts`); schema changes never require touching it. `frontend/` only ever talks to `backend/` over HTTP and has zero knowledge of PostgreSQL. Each can be developed, deployed, and reasoned about independently — see `database/README.md` for the fuller rationale.
