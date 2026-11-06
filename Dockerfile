@@ -42,6 +42,7 @@ RUN cd backend && npm run build
 # Environment defaults for Hugging Face Spaces
 ENV PORT=7860
 ENV DATABASE_URL=postgres://user:@localhost:5432/sultane
+ENV JWT_SECRET=sultane-production-jwt-secret-key-hf-spaces
 ENV NODE_ENV=production
 
 EXPOSE 7860
