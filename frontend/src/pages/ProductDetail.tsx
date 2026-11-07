@@ -131,7 +131,7 @@ export default function ProductDetail() {
             <span className="text-stone">Product ID · {product.sku}</span>
           </div>
 
-          <p className="text-stone leading-relaxed mb-6">{product.description}</p>
+          <p className="text-stone leading-relaxed mb-6 whitespace-pre-line">{product.description}</p>
 
           {product.gemstone && (
             <div className="border border-line p-5 mb-6">

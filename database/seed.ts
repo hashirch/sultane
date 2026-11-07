@@ -54,9 +54,9 @@ type SeedProduct = {
 const products: SeedProduct[] = [
   // ── Women's / core ──────────────────────────────────────────
   {
-    sku: 'SLT-NK-004', slug: 'rosa-heart-halo-necklace', name: 'Rosa Heart Halo Necklace', category: 'Necklaces', price: 24500,
-    collections: ['italia'], bestseller: true,
-    description: 'A heart-cut pink stone framed by a halo of sparkling crystals, suspended on a fine silver cable chain.',
+    sku: 'SLT-NK-004', slug: 'rose-amour-pendant', name: 'The Rosé Amour Pendant', category: 'Necklaces', price: 9999,
+    collections: ['italia'], bestseller: true, premium: true,
+    description: "A beautiful expression of love and elegance, the Rosé Amour Pendant features a captivating heart-shaped pink gemstone, delicately surrounded by a shimmering halo of brilliant accent stones. Set in an elegant silver setting and paired with a fine silver chain, this timeless piece brings romance and sophistication to every occasion.\n\nDesigned for those who appreciate delicate details and understated luxury, it makes a meaningful gift or an exquisite addition to your personal jewellery collection.",
     images: ['/products/rosa-heart-halo-necklace-1.jpg', '/products/rosa-heart-halo-necklace-2.jpg'],
   },
   { sku: 'SLT-NK-001', slug: 'corso-bar-necklace', name: 'Corso Bar Necklace', category: 'Necklaces', price: 23500, collections: ['italia'], bestseller: true, description: 'A minimal sculptural bar pendant on a fine curb chain.' },
