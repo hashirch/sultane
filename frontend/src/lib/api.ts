@@ -4,10 +4,15 @@ const BASE = (import.meta.env.VITE_API_URL ?? '/api').replace(/\/$/, '')
 // Uploaded media is served from the API origin at /uploads/…
 const ASSET_ORIGIN = BASE.replace(/\/api$/, '')
 
+// Images shipped with the site (frontend/public, e.g. /products/…) live under the
+// app's base path — '/sultane/' on GitHub Pages, '/' everywhere else.
+const SITE_BASE = import.meta.env.BASE_URL.replace(/\/$/, '')
+
 export function assetUrl(url: string | null | undefined) {
   if (!url) return ''
-  if (/^https?:\/\//.test(url)) return url
-  return url.startsWith('/uploads/') ? `${ASSET_ORIGIN}${url}` : url
+  if (/^(https?:|data:|blob:)/.test(url)) return url
+  if (url.startsWith('/uploads/')) return `${ASSET_ORIGIN}${url}`
+  return url.startsWith('/') ? `${SITE_BASE}${url}` : url
 }
 
 export class ApiError extends Error {

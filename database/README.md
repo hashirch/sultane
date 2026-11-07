@@ -8,7 +8,7 @@ Owns the PostgreSQL schema for SULTANÉ: table definitions, one-time migration, 
 npm install
 cp .env.example .env     # DATABASE_URL must point at an existing database
 npm run migrate          # applies schema.sql — safe to re-run, every statement is idempotent
-npm run seed              # 3 collections, 22 sample products, settings, policies, FAQs, one owner account
+npm run seed              # 3 collections, 23 sample products, settings, policies, FAQs, one owner account
 npm run reset             # DROP everything and re-apply schema.sql (development / first v2 deploy only)
 ```
 

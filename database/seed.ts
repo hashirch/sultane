@@ -47,10 +47,18 @@ type SeedProduct = {
   mens?: boolean
   status?: 'active' | 'paused' | 'draft'
   gemstone?: { type: string; origin: 'natural' | 'lab-created'; details: string }
+  /** Site images shipped in frontend/public (first = main photo, second = hover). */
+  images?: string[]
 }
 
 const products: SeedProduct[] = [
   // ── Women's / core ──────────────────────────────────────────
+  {
+    sku: 'SLT-NK-004', slug: 'rosa-heart-halo-necklace', name: 'Rosa Heart Halo Necklace', category: 'Necklaces', price: 24500,
+    collections: ['italia'], bestseller: true,
+    description: 'A heart-cut pink stone framed by a halo of sparkling crystals, suspended on a fine silver cable chain.',
+    images: ['/products/rosa-heart-halo-necklace-1.jpg', '/products/rosa-heart-halo-necklace-2.jpg'],
+  },
   { sku: 'SLT-NK-001', slug: 'corso-bar-necklace', name: 'Corso Bar Necklace', category: 'Necklaces', price: 23500, collections: ['italia'], bestseller: true, description: 'A minimal sculptural bar pendant on a fine curb chain.' },
   { sku: 'SLT-NK-002', slug: 'onda-wave-necklace', name: 'Onda Wave Necklace', category: 'Necklaces', price: 25500, collections: ['italia'], description: 'A wave-link chain necklace with soft, sculptural movement.' },
   { sku: 'SLT-NK-003', slug: 'sahar-collar-necklace', name: 'Sahar Collar Necklace', category: 'Necklaces', price: 38000, collections: ['middle-eastern'], bestseller: true, description: 'A bold collar silhouette with a brushed, luminous finish.', production: '10–14 working days' },
@@ -134,6 +142,16 @@ async function seed() {
         `INSERT INTO product_collections (product_id, collection_slug) VALUES ($1,$2) ON CONFLICT DO NOTHING`,
         [rows[0].id, slug],
       )
+    }
+    // Add shipped photos only if the product has none yet, so photos the owner
+    // uploads or reorders in the dashboard are never overwritten by a re-seed.
+    if (p.images?.length) {
+      const { rowCount } = await pool.query(`SELECT 1 FROM product_images WHERE product_id = $1 LIMIT 1`, [rows[0].id])
+      if (!rowCount) {
+        for (const [pos, url] of p.images.entries()) {
+          await pool.query(`INSERT INTO product_images (product_id, url, position) VALUES ($1,$2,$3)`, [rows[0].id, url, pos])
+        }
+      }
     }
   }
 
