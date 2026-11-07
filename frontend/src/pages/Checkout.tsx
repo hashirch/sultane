@@ -8,13 +8,16 @@ import ProductImage from '../components/ProductImage'
 import Field from '../components/Field'
 import { Button } from '../components/Button'
 import { formatPKR, MAJOR_CITIES, PROVINCES } from '../lib/format'
-import { placeOrder, ApiError } from '../lib/api'
+import { placeOrder, ApiError, CATALOGUE_ONLY } from '../lib/api'
+import { useSettings } from '../context/SettingsContext'
+import { waLink } from '../lib/whatsapp'
 import { useQuote } from '../lib/useQuote'
 
 export default function Checkout() {
   const { lines, count, payload, promoCode, setPromoCode, clearCart } = useCart()
   const { customer, token } = useCustomer()
   const navigate = useNavigate()
+  const { settings } = useSettings()
 
   const [name, setName] = useState(customer?.name ?? '')
   const [phone, setPhone] = useState(customer ? `0${customer.phone.slice(2)}` : '')
@@ -36,6 +39,26 @@ export default function Checkout() {
     e.preventDefault()
     if (!agree) {
       setError('Please confirm you have read the delivery and returns policy.')
+      return
+    }
+    if (CATALOGUE_ONLY) {
+      // No order server: send the order to the shop on WhatsApp instead.
+      const items = lines.map(
+        (l) => `• ${l.product.name} (${l.product.sku}) × ${l.qty}${l.size ? `, size ${l.size}` : ''}${l.gemstoneTesting ? ', with gemstone testing' : ''} — ${formatPKR(l.product.price * l.qty)}`,
+      )
+      const text = [
+        'Hello SULTANÉ, I would like to place an order:',
+        ...items,
+        quote ? `Estimated total: ${formatPKR(quote.total)}${quote.delivery == null ? ' + delivery' : ' (incl. delivery)'}` : '',
+        promoCode ? `Promo code: ${promoCode}` : '',
+        '',
+        `Name: ${name}`,
+        `Phone: ${phone}`,
+        email ? `Email: ${email}` : '',
+        `Address: ${[street, area, city, province].filter(Boolean).join(', ')}`,
+        notes ? `Notes: ${notes}` : '',
+      ].filter((line, i, all) => line !== '' || all[i - 1] !== '')
+      window.location.href = waLink(settings.whatsapp_number, text.join('\n'))
       return
     }
     setSubmitting(true)
@@ -120,8 +143,10 @@ export default function Checkout() {
               <div className="text-sm">
                 <div className="font-medium mb-1">Bank transfer</div>
                 <p className="text-stone leading-relaxed">
-                  After you submit, we show our bank details and the exact amount to transfer. Upload your receipt on the order page
-                  (or send it on WhatsApp). Our team verifies every payment by hand — production only starts once it's verified.
+                  {CATALOGUE_ONLY
+                    ? 'We send our bank details and the exact amount on WhatsApp. Send your transfer receipt there too.'
+                    : 'After you submit, we show our bank details and the exact amount to transfer. Upload your receipt on the order page (or send it on WhatsApp).'}{' '}
+                  Our team verifies every payment by hand — production only starts once it's verified.
                 </p>
               </div>
             </div>
@@ -162,11 +187,15 @@ export default function Checkout() {
 
           <OrderSummary quote={quote} loading={loading} itemCount={count} promoCode={promoCode} onPromoChange={setPromoCode}>
             {(error || quoteError) && <p className="text-sm text-danger mb-4">{error || quoteError}</p>}
-            <Button type="submit" disabled={submitting || !!quoteError || !quote || (!!promoCode && !quote.promo?.applied)} className="w-full !py-4">
-              {submitting ? 'Placing order…' : `Place order${quote?.delivery != null ? ` · ${formatPKR(quote.total)}` : ''}`}
+            <Button type="submit" disabled={submitting || !!quoteError || !quote || (!CATALOGUE_ONLY && !!promoCode && !quote.promo?.applied)} className="w-full !py-4">
+              {submitting ? 'Placing order…' : `${CATALOGUE_ONLY ? 'Send order on WhatsApp' : 'Place order'}${quote?.delivery != null ? ` · ${formatPKR(quote.total)}` : ''}`}
             </Button>
-            {!!promoCode && quote?.promo && !quote.promo.applied && <p className="text-xs text-stone mt-2">Remove the code to continue.</p>}
-            <p className="text-xs text-stone mt-4">Placing your order does not take payment. You will receive bank-transfer instructions next.</p>
+            {!CATALOGUE_ONLY && !!promoCode && quote?.promo && !quote.promo.applied && <p className="text-xs text-stone mt-2">Remove the code to continue.</p>}
+            <p className="text-xs text-stone mt-4">
+              {CATALOGUE_ONLY
+                ? 'This opens WhatsApp with your order. We confirm the price, delivery and bank-transfer details with you there — no payment is taken now.'
+                : 'Placing your order does not take payment. You will receive bank-transfer instructions next.'}
+            </p>
           </OrderSummary>
         </div>
       </form>

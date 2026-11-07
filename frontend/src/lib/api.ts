@@ -1,6 +1,15 @@
 import type { Collection, CustomerOrder, Product, SiteSettings } from '../data/types'
+import catalogue from '../data/catalogue.json'
 
 const BASE = (import.meta.env.VITE_API_URL ?? '/api').replace(/\/$/, '')
+
+/**
+ * Catalogue-only mode: built with an empty VITE_API_URL (GitHub Pages without
+ * an API). Products, collections and settings come from src/data/catalogue.json
+ * (refresh with `npm run snapshot`); checkout is sent on WhatsApp instead.
+ */
+export const CATALOGUE_ONLY = import.meta.env.VITE_API_URL === ''
+const CATALOGUE_ONLY_MESSAGE = 'This is not available online yet — please message us on WhatsApp and we will help you directly.'
 // Uploaded media is served from the API origin at /uploads/…
 const ASSET_ORIGIN = BASE.replace(/\/api$/, '')
 
@@ -27,6 +36,7 @@ export async function request<T>(path: string, options: RequestInit = {}, token?
   const headers: Record<string, string> = { ...(options.headers as Record<string, string>) }
   if (options.body && !(options.body instanceof FormData)) headers['Content-Type'] = 'application/json'
   if (token) headers.Authorization = `Bearer ${token}`
+  if (CATALOGUE_ONLY) throw new ApiError(503, CATALOGUE_ONLY_MESSAGE)
 
   let res: Response
   try {
@@ -92,11 +102,51 @@ function mapCollection(c: any): Collection {
 /* eslint-enable @typescript-eslint/no-explicit-any */
 
 // ── Public: settings & catalogue ──────────────────────────────
-export const getSettings = () => request<Partial<SiteSettings>>('/settings')
+// Reads fall back to the bundled catalogue when there is no API, or when it
+// cannot be reached (e.g. a free host still waking up).
+async function orCatalogue<T>(live: () => Promise<T>, bundled: () => T): Promise<T> {
+  if (CATALOGUE_ONLY) return bundled()
+  try {
+    return await live()
+  } catch (err) {
+    if (err instanceof ApiError && err.status === 0) return bundled()
+    throw err
+  }
+}
+
+export const getSettings = () =>
+  orCatalogue(() => request<Partial<SiteSettings>>('/settings'), () => catalogue.settings as Partial<SiteSettings>)
 
 export async function getCollections(): Promise<Collection[]> {
-  return (await request<unknown[]>('/collections')).map(mapCollection)
+  return (await orCatalogue(() => request<unknown[]>('/collections'), () => catalogue.collections as unknown[])).map(mapCollection)
 }
+
+/* eslint-disable @typescript-eslint/no-explicit-any */
+// Same filters and ordering as GET /api/products, applied to the bundled rows.
+function filterCatalogue(q: ProductQuery): any[] {
+  const list = (v?: string) => (v ? v.split(',') : null)
+  const cats = list(q.category)
+  const cols = list(q.collection)
+  const gems = q.gemstone && !['any', 'none'].includes(q.gemstone) ? list(q.gemstone) : null
+  const term = q.q?.trim().toLowerCase()
+  const rows = (catalogue.products as any[]).filter(
+    (p) =>
+      (!cats || cats.includes(p.category)) &&
+      (!cols || p.collections.some((c: string) => cols.includes(c))) &&
+      (q.gemstone !== 'any' || p.gemstone_type) &&
+      (q.gemstone !== 'none' || !p.gemstone_type) &&
+      (!gems || gems.includes(p.gemstone_type)) &&
+      (q.mens !== '1' || p.is_mens) &&
+      (q.mens !== '0' || !p.is_mens) &&
+      (q.premium !== '1' || p.is_premium) &&
+      (q.bestseller !== '1' || p.is_bestseller) &&
+      (!term || [p.name, p.description, p.sku, p.gemstone_type, p.category].some((f) => f?.toLowerCase().includes(term))),
+  )
+  if (q.sort === 'price-asc') return rows.sort((a, b) => a.price_pkr - b.price_pkr)
+  if (q.sort === 'price-desc') return rows.sort((a, b) => b.price_pkr - a.price_pkr)
+  return q.sort === 'newest' ? rows.reverse() : rows
+}
+/* eslint-enable @typescript-eslint/no-explicit-any */
 
 export interface ProductQuery {
   category?: string
@@ -111,14 +161,18 @@ export interface ProductQuery {
 
 export async function getProducts(query: ProductQuery = {}): Promise<Product[]> {
   const qs = new URLSearchParams(Object.entries(query).filter(([, v]) => v) as [string, string][]).toString()
-  return (await request<unknown[]>(`/products${qs ? `?${qs}` : ''}`)).map(mapProduct)
+  return (await orCatalogue(() => request<unknown[]>(`/products${qs ? `?${qs}` : ''}`), () => filterCatalogue(query))).map(mapProduct)
 }
 
-export const getGemstoneTypes = () => request<string[]>('/products/gemstones')
+export const getGemstoneTypes = () => orCatalogue(() => request<string[]>('/products/gemstones'), () => catalogue.gemstones)
 
 export async function getProduct(slug: string): Promise<Product | null> {
+  const bundled = () => {
+    const row = catalogue.products.find((p) => p.slug === slug)
+    return row ? mapProduct(row) : null
+  }
   try {
-    return mapProduct(await request(`/products/${encodeURIComponent(slug)}`))
+    return await orCatalogue(async () => mapProduct(await request(`/products/${encodeURIComponent(slug)}`)), bundled)
   } catch (err) {
     if (err instanceof ApiError && err.status === 404) return null
     throw err
@@ -143,7 +197,27 @@ export interface Quote {
 }
 
 export const getQuote = (body: { items: CartItemPayload[]; city?: string; promoCode?: string; phone?: string }) =>
-  request<Quote>('/orders/quote', json('POST', body))
+  CATALOGUE_ONLY ? Promise.resolve(catalogueQuote(body)) : request<Quote>('/orders/quote', json('POST', body))
+
+// Mirrors the server's pricing (backend/src/lib/pricing.ts) for catalogue-only
+// mode. Promo codes are confirmed on WhatsApp, as there is no server to check them.
+function catalogueQuote(body: { items: CartItemPayload[]; city?: string; promoCode?: string }): Quote {
+  const s = catalogue.settings
+  let subtotal = 0
+  let testingFees = 0
+  for (const item of body.items) {
+    const p = catalogue.products.find((x) => x.id === item.productId)
+    if (!p) continue
+    subtotal += p.price_pkr * item.qty
+    if (item.gemstoneTesting && p.is_premium && p.testing_available && p.gemstone_type) testingFees += s.gemstone_testing_fee_pkr * item.qty
+  }
+  const city = body.city?.trim().toLowerCase()
+  const delivery = !city ? null : city === 'karachi' ? s.delivery_fee_karachi_pkr : s.delivery_fee_other_pkr
+  const promo = body.promoCode
+    ? { code: body.promoCode.toUpperCase(), applied: false, message: 'Promo codes are confirmed with you on WhatsApp.' }
+    : null
+  return { subtotal, testingFees, delivery, discount: 0, total: subtotal + testingFees + (delivery ?? 0), promo }
+}
 
 export interface CheckoutPayload {
   customer: { name: string; phone: string; email?: string; street: string; area?: string; city: string; province?: string; notes?: string }

@@ -1,0 +1,809 @@
+{
+ "products": [
+  {
+   "id": "c5bd4923-f13f-4add-b552-8d1beb1b10ee",
+   "sku": "SLT-NK-004",
+   "slug": "rosa-heart-halo-necklace",
+   "name": "Rosa Heart Halo Necklace",
+   "category": "Necklaces",
+   "price_pkr": 24500,
+   "description": "A heart-cut pink stone framed by a halo of sparkling crystals, suspended on a fine silver cable chain.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": true,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": true,
+   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 0,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "23e9240e-ea5d-4f1a-aec1-d0ac395fb59a",
+     "url": "/products/rosa-heart-halo-necklace-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "b4311714-96b5-4a27-baa9-365cbed0b175",
+     "url": "/products/rosa-heart-halo-necklace-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "6cccf032-3bad-4c87-807d-4592e7db38ac",
+   "sku": "SLT-NK-001",
+   "slug": "corso-bar-necklace",
+   "name": "Corso Bar Necklace",
+   "category": "Necklaces",
+   "price_pkr": 23500,
+   "description": "A minimal sculptural bar pendant on a fine curb chain.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": true,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": true,
+   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 1,
+   "collections": [
+    "italia"
+   ],
+   "images": []
+  },
+  {
+   "id": "23acb595-2e65-4fb9-81ca-e3a62b1b3073",
+   "sku": "SLT-NK-002",
+   "slug": "onda-wave-necklace",
+   "name": "Onda Wave Necklace",
+   "category": "Necklaces",
+   "price_pkr": 25500,
+   "description": "A wave-link chain necklace with soft, sculptural movement.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": true,
+   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 2,
+   "collections": [
+    "italia"
+   ],
+   "images": []
+  },
+  {
+   "id": "66eb4e7e-ac19-4937-9441-d6f45e4777b3",
+   "sku": "SLT-NK-003",
+   "slug": "sahar-collar-necklace",
+   "name": "Sahar Collar Necklace",
+   "category": "Necklaces",
+   "price_pkr": 38000,
+   "description": "A bold collar silhouette with a brushed, luminous finish.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "10–14 working days",
+   "is_bestseller": true,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": true,
+   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 3,
+   "collections": [
+    "middle-eastern"
+   ],
+   "images": []
+  },
+  {
+   "id": "5e203eb3-b3ef-4ee9-88b0-fcff322df4f8",
+   "sku": "SLT-PD-001",
+   "slug": "ayla-medallion-pendant",
+   "name": "Ayla Medallion Pendant",
+   "category": "Pendants",
+   "price_pkr": 16800,
+   "description": "An intricate medallion motif suspended on a fine chain.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": true,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": true,
+   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 4,
+   "collections": [
+    "turkish"
+   ],
+   "images": []
+  },
+  {
+   "id": "fa4d8abb-45ca-420c-b0d3-b7bab36313db",
+   "sku": "SLT-ER-001",
+   "slug": "lale-drop-earrings",
+   "name": "Lale Drop Earrings",
+   "category": "Earrings",
+   "price_pkr": 18900,
+   "description": "Tulip-inspired drops with fine filigree detail.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": true,
+   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 5,
+   "collections": [
+    "turkish"
+   ],
+   "images": []
+  },
+  {
+   "id": "3ebc9a73-a342-44d4-ab36-553782946536",
+   "sku": "SLT-ER-002",
+   "slug": "noor-hoop-earrings",
+   "name": "Noor Hoop Earrings",
+   "category": "Earrings",
+   "price_pkr": 14500,
+   "description": "Hammered silver hoops with a soft, luminous texture.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": true,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": true,
+   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 6,
+   "collections": [
+    "middle-eastern"
+   ],
+   "images": []
+  },
+  {
+   "id": "75c7b929-5d77-4576-81f8-4f7b8ba2bee6",
+   "sku": "SLT-ER-003",
+   "slug": "vela-sculpted-studs",
+   "name": "Vela Sculpted Studs",
+   "category": "Earrings",
+   "price_pkr": 11800,
+   "description": "Small, mirror-polished sculpted studs for everyday wear.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": true,
+   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 7,
+   "collections": [
+    "italia"
+   ],
+   "images": []
+  },
+  {
+   "id": "6e5c25e7-67f7-43cf-a6b5-fa1ff53ce4b9",
+   "sku": "SLT-BR-001",
+   "slug": "elif-link-bracelet",
+   "name": "Elif Link Bracelet",
+   "category": "Bracelets",
+   "price_pkr": 20500,
+   "description": "A refined link bracelet with a motif clasp.",
+   "sizes": [
+    "16 cm",
+    "17 cm",
+    "18 cm",
+    "19 cm"
+   ],
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": true,
+   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 8,
+   "collections": [
+    "turkish"
+   ],
+   "images": []
+  },
+  {
+   "id": "65dcb4bc-7f78-413f-8a55-9539dfc9cb77",
+   "sku": "SLT-BR-002",
+   "slug": "safiya-open-cuff",
+   "name": "Safiya Open Cuff",
+   "category": "Bracelets",
+   "price_pkr": 24800,
+   "description": "A brushed, bold cuff with an adjustable open back.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": true,
+   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 9,
+   "collections": [
+    "middle-eastern"
+   ],
+   "images": []
+  },
+  {
+   "id": "2534f9a3-1c24-47b7-9ee8-bca1655b3863",
+   "sku": "SLT-BR-003",
+   "slug": "sera-paperclip-bracelet",
+   "name": "Sera Paperclip Bracelet",
+   "category": "Bracelets",
+   "price_pkr": 15900,
+   "description": "A fluid paperclip-link bracelet designed to layer or wear alone.",
+   "sizes": [
+    "16 cm",
+    "17 cm",
+    "18 cm"
+   ],
+   "status": "paused",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": true,
+   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 10,
+   "collections": [
+    "italia"
+   ],
+   "images": []
+  },
+  {
+   "id": "8c6a799e-a754-468a-9d88-c2d589059cc8",
+   "sku": "SLT-RG-001",
+   "slug": "luna-sculpted-ring",
+   "name": "Luna Sculpted Ring",
+   "category": "Rings",
+   "price_pkr": 18500,
+   "description": "A fluid crescent with a luminous surface.",
+   "sizes": [
+    "6",
+    "7",
+    "8",
+    "9"
+   ],
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": true,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": true,
+   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 11,
+   "collections": [
+    "italia"
+   ],
+   "images": []
+  },
+  {
+   "id": "53456afb-f542-4197-9988-91e5bcc8c34e",
+   "sku": "SLT-RG-002",
+   "slug": "esma-medallion-ring",
+   "name": "Esma Medallion Ring",
+   "category": "Rings",
+   "price_pkr": 19200,
+   "description": "A miniature medallion motif set into a comfortable band.",
+   "sizes": [
+    "6",
+    "7",
+    "8",
+    "9"
+   ],
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": true,
+   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 12,
+   "collections": [
+    "turkish"
+   ],
+   "images": []
+  },
+  {
+   "id": "8d1e0e68-c33f-48b1-8bf4-f0f6bccaaf33",
+   "sku": "SLT-PR-001",
+   "slug": "layla-emerald-necklace",
+   "name": "Layla Emerald Necklace",
+   "category": "Necklaces",
+   "price_pkr": 42000,
+   "description": "A statement necklace centred on a single emerald, framed in brushed silver.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "14–18 working days",
+   "is_bestseller": true,
+   "is_premium": true,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": true,
+   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "gemstone_type": "Emerald",
+   "gemstone_origin": "natural",
+   "gemstone_details": "Single oval-cut emerald, approx. 7 × 5 mm.",
+   "testing_available": true,
+   "certification_info": "Optional independent gemstone testing. Documentation is supplied by the testing service and placed in your SULTANÉ certificate sleeve.",
+   "position": 13,
+   "collections": [
+    "middle-eastern"
+   ],
+   "images": []
+  },
+  {
+   "id": "190c104b-eadc-4e30-8254-4658eec694f2",
+   "sku": "SLT-PR-002",
+   "slug": "firuze-turquoise-pendant",
+   "name": "Firuze Turquoise Pendant",
+   "category": "Pendants",
+   "price_pkr": 27500,
+   "description": "A medallion pendant set with turquoise, inspired by Ottoman motif work.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "10–14 working days",
+   "is_bestseller": false,
+   "is_premium": true,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": true,
+   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "gemstone_type": "Turquoise",
+   "gemstone_origin": "natural",
+   "gemstone_details": "Cabochon turquoise, approx. 10 mm.",
+   "testing_available": true,
+   "certification_info": "Optional independent gemstone testing. Documentation is supplied by the testing service and placed in your SULTANÉ certificate sleeve.",
+   "position": 14,
+   "collections": [
+    "turkish"
+   ],
+   "images": []
+  },
+  {
+   "id": "db2abdfa-fcbf-4df5-aae3-47568b8d3a66",
+   "sku": "SLT-PR-003",
+   "slug": "amara-ruby-ring",
+   "name": "Amara Ruby Ring",
+   "category": "Rings",
+   "price_pkr": 31500,
+   "description": "A sculpted band holding a ruby in a low, modern bezel.",
+   "sizes": [
+    "6",
+    "7",
+    "8",
+    "9"
+   ],
+   "status": "active",
+   "production_time": "10–14 working days",
+   "is_bestseller": false,
+   "is_premium": true,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": true,
+   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "gemstone_type": "Ruby",
+   "gemstone_origin": "lab-created",
+   "gemstone_details": "Round-cut laboratory-created ruby, approx. 5 mm.",
+   "testing_available": true,
+   "certification_info": "Optional independent gemstone testing. Documentation is supplied by the testing service and placed in your SULTANÉ certificate sleeve.",
+   "position": 15,
+   "collections": [
+    "italia"
+   ],
+   "images": []
+  },
+  {
+   "id": "e2dad9c3-8446-4a42-8b7b-d218e8ac0706",
+   "sku": "SLT-PR-004",
+   "slug": "zafira-sapphire-earrings",
+   "name": "Zafira Sapphire Earrings",
+   "category": "Earrings",
+   "price_pkr": 34000,
+   "description": "Drop earrings set with blue sapphires and fine granulation.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "14–18 working days",
+   "is_bestseller": false,
+   "is_premium": true,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": true,
+   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "gemstone_type": "Sapphire",
+   "gemstone_origin": "natural",
+   "gemstone_details": "Pair of pear-cut sapphires, approx. 6 × 4 mm each.",
+   "testing_available": true,
+   "certification_info": "Optional independent gemstone testing. Documentation is supplied by the testing service and placed in your SULTANÉ certificate sleeve.",
+   "position": 16,
+   "collections": [
+    "middle-eastern",
+    "turkish"
+   ],
+   "images": []
+  },
+  {
+   "id": "be7605df-1337-4b65-92dc-f8579eb86650",
+   "sku": "SLT-MC-001",
+   "slug": "sultan-cuban-chain",
+   "name": "Sultan Cuban Chain",
+   "category": "Chains",
+   "price_pkr": 32000,
+   "description": "A heavy Cuban-link chain with a polished box clasp.",
+   "sizes": [
+    "20 in",
+    "22 in",
+    "24 in"
+   ],
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": true,
+   "is_premium": false,
+   "is_mens": true,
+   "allow_customisation": true,
+   "purity_925": true,
+   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 17,
+   "collections": [
+    "middle-eastern"
+   ],
+   "images": []
+  },
+  {
+   "id": "79171298-91cf-4ef0-abd4-f8e2f6f9e031",
+   "sku": "SLT-MC-002",
+   "slug": "roma-figaro-chain",
+   "name": "Roma Figaro Chain",
+   "category": "Chains",
+   "price_pkr": 26000,
+   "description": "A classic Figaro-link chain with a confident weight.",
+   "sizes": [
+    "20 in",
+    "22 in",
+    "24 in"
+   ],
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": true,
+   "allow_customisation": true,
+   "purity_925": true,
+   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 18,
+   "collections": [
+    "italia"
+   ],
+   "images": []
+  },
+  {
+   "id": "2781ed22-61be-4742-b0f0-7d522c46121c",
+   "sku": "SLT-MR-001",
+   "slug": "osman-signet-ring",
+   "name": "Osman Signet Ring",
+   "category": "Rings",
+   "price_pkr": 22500,
+   "description": "A substantial signet ring with an engraved motif border.",
+   "sizes": [
+    "9",
+    "10",
+    "11",
+    "12"
+   ],
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": true,
+   "allow_customisation": true,
+   "purity_925": true,
+   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 19,
+   "collections": [
+    "turkish"
+   ],
+   "images": []
+  },
+  {
+   "id": "db4256f6-1f09-4580-93ed-f38bf3f8f9d2",
+   "sku": "SLT-MR-002",
+   "slug": "atlas-band-ring",
+   "name": "Atlas Band Ring",
+   "category": "Rings",
+   "price_pkr": 17500,
+   "description": "A hammered, matte band with a bold profile.",
+   "sizes": [
+    "9",
+    "10",
+    "11",
+    "12"
+   ],
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": true,
+   "allow_customisation": true,
+   "purity_925": true,
+   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 20,
+   "collections": [
+    "middle-eastern"
+   ],
+   "images": []
+  },
+  {
+   "id": "c81a73a3-8426-4215-8651-4dedd8d741b5",
+   "sku": "SLT-MB-001",
+   "slug": "malik-curb-bracelet",
+   "name": "Malik Curb Bracelet",
+   "category": "Bracelets",
+   "price_pkr": 24000,
+   "description": "A wide curb-link bracelet with a secure lobster clasp.",
+   "sizes": [
+    "19 cm",
+    "20 cm",
+    "21 cm"
+   ],
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": true,
+   "allow_customisation": true,
+   "purity_925": true,
+   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 21,
+   "collections": [
+    "middle-eastern"
+   ],
+   "images": []
+  },
+  {
+   "id": "c76a04ea-675a-4a48-b0c1-b9875feafecd",
+   "sku": "SLT-MB-002",
+   "slug": "venezia-box-bracelet",
+   "name": "Venezia Box Bracelet",
+   "category": "Bracelets",
+   "price_pkr": 19800,
+   "description": "A sleek box-link bracelet with a mirror finish.",
+   "sizes": [
+    "19 cm",
+    "20 cm",
+    "21 cm"
+   ],
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": true,
+   "allow_customisation": true,
+   "purity_925": true,
+   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 22,
+   "collections": [
+    "italia"
+   ],
+   "images": []
+  }
+ ],
+ "collections": [
+  {
+   "slug": "italia",
+   "name": "Italia",
+   "tagline": "Fluid lines, sculptural ease.",
+   "description": "Soft, poured silhouettes and polished links inspired by Italian jewellery traditions. A design language — not a claim of manufacturing origin.",
+   "image_url": null,
+   "position": 1,
+   "product_count": 9
+  },
+  {
+   "slug": "turkish",
+   "name": "Turkish",
+   "tagline": "Intricate motifs, reimagined.",
+   "description": "Medallions, filigree and motif work inspired by Turkish decorative arts, rendered in silver for the modern wardrobe.",
+   "image_url": null,
+   "position": 2,
+   "product_count": 7
+  },
+  {
+   "slug": "middle-eastern",
+   "name": "Middle Eastern",
+   "tagline": "Bold forms, luminous presence.",
+   "description": "Confident, sculptural silhouettes with hammered and brushed finishes, drawing on the regal jewellery traditions of the Middle East.",
+   "image_url": null,
+   "position": 3,
+   "product_count": 8
+  }
+ ],
+ "gemstones": [
+  "Emerald",
+  "Ruby",
+  "Sapphire",
+  "Turquoise"
+ ],
+ "settings": {
+  "whatsapp_number": "923000000000",
+  "delivery_fee_karachi_pkr": 0,
+  "delivery_fee_other_pkr": 350,
+  "gemstone_testing_fee_pkr": 799,
+  "bank_details": {
+   "iban": "PK00XXXX0000000000000000",
+   "bankName": "Your Bank Name",
+   "accountTitle": "SULTANÉ",
+   "accountNumber": "0000-0000000000"
+  },
+  "hero_video_url": "",
+  "hero_poster_url": "",
+  "loyalty_percent": 5,
+  "loyalty_valid_days": 90,
+  "announcement": "Free delivery within Karachi · Made to order · Every piece registered with a unique article number",
+  "about_story": "SULTANÉ was born from a love of regal jewellery traditions — the fluid sculpture of Italy, the intricate motifs of Türkiye and the bold silhouettes of the Middle East — reimagined in silver for today.\n\nEvery piece is made to order by our jewellery maker once your payment is verified. We would rather take the time to make your piece properly than promise a dispatch date we cannot keep.\n\nEach purchased piece receives its own article number, recorded in our registry and printed on a SULTANÉ authenticity card, so the story of your jewellery stays with it.",
+  "faqs": [
+   {
+    "a": "Add standard designs to your bag and check out as a guest or with an account. You will receive an order number and bank-transfer instructions straight away.",
+    "q": "How do I place an order?"
+   },
+   {
+    "a": "At launch we accept bank transfer only. After placing your order, transfer the total shown and upload your receipt on the order page, or send it to us on WhatsApp. Production begins only after our team manually verifies the payment.",
+    "q": "How do I pay?"
+   },
+   {
+    "a": "Every SULTANÉ piece is made to order. Each product page shows its estimated production time. Courier transit time is separate and follows dispatch.",
+    "q": "How long does production take?"
+   },
+   {
+    "a": "Delivery within Karachi is free. A delivery charge applies elsewhere in Pakistan and is shown at checkout before you submit your order.",
+    "q": "What does delivery cost?"
+   },
+   {
+    "a": "Yes. Use \"Customise This Design — Request Price\" on any product page, or submit an inspiration image through Customised Jewellery. We will confirm feasibility and price on WhatsApp — nothing is charged until you approve a quotation.",
+    "q": "Can I customise a design?"
+   },
+   {
+    "a": "Eligible Premium Collection pieces offer optional gemstone testing for Rs. 799 per piece. It is selected by default and you can untick it. Documentation depends on the testing service used and is confirmed before dispatch.",
+    "q": "What is gemstone testing?"
+   },
+   {
+    "a": "Once your payment is verified, every piece you purchased receives its own unique article number. It appears on your order page, is shared on WhatsApp and is printed on your SULTANÉ authenticity card with a QR code.",
+    "q": "What is my article number?"
+   },
+   {
+    "a": "Visit Verify Your Piece and enter the article number, or scan the QR code on your authenticity card. A registered number shows the owner’s name, the piece name and the purchase date — never contact or address details.",
+    "q": "How do I verify my piece?"
+   },
+   {
+    "a": "Store each piece separately in its pouch, keep it dry, avoid perfume and harsh chemicals, and polish gently with the SULTANÉ cloth included in your packaging.",
+    "q": "How should I care for silver jewellery?"
+   },
+   {
+    "a": "Message us on WhatsApp within 24 hours of receiving your order with your order number, photos or video and a description of the problem. See our Returns & Defects policy for details.",
+    "q": "What if my order arrives damaged or incorrect?"
+   }
+  ],
+  "policy_delivery": "Free delivery within Karachi.\n\nDelivery charges apply to orders shipped elsewhere in Pakistan. The applicable charge is calculated from your delivery city and shown at checkout before you submit your order.\n\nEvery piece is made to order. The production time shown on each product page is separate from courier transit time. We will share the courier name and tracking number on WhatsApp and on your order page once your order is dispatched.",
+  "policy_returns": "Because every SULTANÉ piece is made to order, we do not accept change-of-mind returns or exchanges.\n\nDefective or incorrect items\nIf your order arrives defective or is not the item you ordered, message us on WhatsApp within 24 hours of receiving it with:\n• your order number\n• clear photographs or a video of the item\n• a short description of the problem\n\nWe will review every report and arrange a suitable remedy. This policy does not limit any rights or remedies you have under applicable consumer-protection law.",
+  "policy_privacy": "We collect only the information needed to make and deliver your order: your name, phone number, delivery address and, optionally, an email address. Payment receipts you upload are visible only to the SULTANÉ team and are used solely to verify your payment.\n\nYour article-number verification page shows only your name, the jewellery piece name and the purchase date. Your phone number and address are never shown publicly.\n\nWe do not sell your data. We contact you on WhatsApp about your orders and enquiries. To ask for your data to be corrected or deleted, contact us on WhatsApp.",
+  "policy_terms": "Prices are in Pakistani Rupees (PKR). An order is confirmed once your bank-transfer payment has been manually verified by our team; production begins only after verification.\n\nCustomisation requests are not orders. A customised piece is only made after you approve a quotation shared on WhatsApp and pay the approved amount.\n\nMaterial and gemstone details are stated per product. \"925 Sterling Silver\" appears only on pieces whose material has been confirmed."
+ }
+}
