@@ -3,8 +3,10 @@ services:
     name: sultane-api
     runtime: node
     plan: free
-    buildCommand: npm ci --prefix database && npm ci --prefix backend && npm run build --prefix backend
-    startCommand: npm run start --prefix backend
+    # --include=dev: NODE_ENV=production would otherwise skip TypeScript/tsx needed to build and migrate.
+    buildCommand: npm ci --include=dev --prefix database && npm ci --include=dev --prefix backend && npm run build --prefix backend
+    # bootstrap applies the schema and seeds sample data only when the database is empty.
+    startCommand: npm run bootstrap --prefix database && npm run start --prefix backend
     healthCheckPath: /health
     envVars:
       - key: DATABASE_URL
@@ -12,6 +14,11 @@ services:
       - key: JWT_SECRET
         generateValue: true
       - key: CORS_ORIGIN
-        sync: false
+        value: https://hashirch.github.io
+      - key: SEED_ADMIN_EMAIL
+        value: owner@sultane.pk
+      # Owner dashboard password — read it in Render → sultane-api → Environment.
+      - key: SEED_ADMIN_PASSWORD
+        generateValue: true
       - key: NODE_ENV
         value: production

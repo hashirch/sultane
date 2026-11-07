@@ -6,7 +6,8 @@
   "scripts": {
     "migrate": "tsx migrate.ts",
     "seed": "tsx seed.ts",
-    "reset": "tsx reset.ts"
+    "reset": "tsx reset.ts",
+    "bootstrap": "tsx bootstrap.ts"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",

@@ -43,8 +43,8 @@ Owner dashboard: `/admin/login` — the seed prints the owner login (default `ow
 The repository includes a GitHub Pages workflow for the frontend and a Render blueprint for the API:
 
 1. Create a free PostgreSQL database on Neon and copy its connection string.
-2. In Render, create a Blueprint from this repository using `render.yaml`. Set `DATABASE_URL` to the Neon connection string and `CORS_ORIGIN` to `https://hashirch.github.io`.
-3. Run `npm run reset && npm run seed` in `database/` against Neon (v2 schema), then note the Render API URL.
+2. In Render, create a Blueprint from this repository using `render.yaml` and paste the Neon connection string as `DATABASE_URL`. On every start the API runs `database` `bootstrap`: it applies the schema and seeds sample data only if the database is empty. The owner dashboard password is generated as `SEED_ADMIN_PASSWORD` (Render → sultane-api → Environment).
+3. Note the Render API URL (e.g. `https://sultane-api.onrender.com`).
 4. In GitHub repository Settings → Secrets and variables → Actions → Variables, add `VITE_API_URL` with the Render API URL plus `/api`, for example `https://sultane-api.onrender.com/api`.
 5. In GitHub repository Settings → Pages, select **GitHub Actions** as the source. Pushes to `main` will deploy the frontend at `https://hashirch.github.io/sultane/`.
 
