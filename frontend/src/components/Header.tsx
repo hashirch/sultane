@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react'
+import { createPortal } from 'react-dom'
 import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
 import { Search, User, ShoppingBag, Menu, X, ChevronDown, ShieldCheck } from 'lucide-react'
 import { useCart } from '../context/CartContext'
@@ -170,8 +171,10 @@ export default function Header() {
         </div>
       )}
 
-      {drawer && (
-        <div className="fixed inset-0 z-50 lg:hidden" role="dialog" aria-modal="true" aria-label="Menu">
+      {/* Portalled to <body>: the header's backdrop-filter would otherwise become the
+          containing block for this fixed overlay and trap it inside the header strip. */}
+      {drawer && createPortal(
+        <div className="fixed inset-0 z-[100] lg:hidden" role="dialog" aria-modal="true" aria-label="Menu">
           <div className="absolute inset-0 bg-noir/50" onClick={() => setDrawer(false)} />
           <div className="absolute left-0 top-0 h-full w-[85vw] max-w-sm bg-cream shadow-2xl flex flex-col overflow-y-auto">
             <div className="flex items-center justify-between px-6 h-16 border-b border-line">
@@ -220,7 +223,8 @@ export default function Header() {
               <Link to="/contact">Contact us</Link>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body,
       )}
     </header>
   )
