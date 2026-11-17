@@ -24,6 +24,18 @@ export function assetUrl(url: string | null | undefined) {
   return url.startsWith('/') ? `${SITE_BASE}${url}` : url
 }
 
+/**
+ * Product photos shipped with the site come in two sizes: /products/<name>
+ * (1000px, product page) and /products/sm/<name> (480px — cards, thumbnails,
+ * bag). Uploaded photos (/uploads/…) have a single size.
+ */
+export function photoUrl(url: string | null | undefined, size: 'sm' | 'lg' = 'sm') {
+  if (url && size === 'sm' && url.startsWith('/products/') && !url.startsWith('/products/sm/')) {
+    return assetUrl(url.replace('/products/', '/products/sm/'))
+  }
+  return assetUrl(url)
+}
+
 export class ApiError extends Error {
   status: number
   constructor(status: number, message: string) {

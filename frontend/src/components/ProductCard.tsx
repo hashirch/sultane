@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import type { Product } from '../data/types'
 import ProductImage from './ProductImage'
 import { priceLabel } from '../lib/format'
-import { assetUrl } from '../lib/api'
+import { photoUrl } from '../lib/api'
 
 export default function ProductCard({ product, dark = false }: { product: Product; dark?: boolean }) {
   const [first, second] = product.images
@@ -13,7 +13,7 @@ export default function ProductCard({ product, dark = false }: { product: Produc
         <ProductImage src={first?.url} alt={product.name} category={product.category} className="aspect-[4/5] w-full" dark={dark} />
         {second && (
           <img
-            src={assetUrl(second.url)}
+            src={photoUrl(second.url)}
             alt=""
             loading="lazy"
             className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500"

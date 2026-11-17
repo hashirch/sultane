@@ -3,7 +3,7 @@ import { Link, Navigate, useParams } from 'react-router-dom'
 import PageBanner from '../components/PageBanner'
 import { Listing } from './Shop'
 import { useCollections } from '../lib/useCollections'
-import { assetUrl, getProducts } from '../lib/api'
+import { photoUrl, getProducts } from '../lib/api'
 import type { Product } from '../data/types'
 
 export default function Collections() {
@@ -27,7 +27,7 @@ export default function Collections() {
             <Link key={c.slug} to={`/collections/${c.slug}`} className={`group grid md:grid-cols-2 bg-cream-dark overflow-hidden ${i % 2 ? 'md:[direction:rtl]' : ''}`}>
               <div className="relative aspect-[4/3] bg-noir overflow-hidden">
                 {cover ? (
-                  <img src={assetUrl(cover)} alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img src={photoUrl(cover)} alt="" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 ) : (
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,#3d2c30,#141213)] flex items-center justify-center">
                     <span className="font-display text-5xl text-rosegold">{c.name}</span>

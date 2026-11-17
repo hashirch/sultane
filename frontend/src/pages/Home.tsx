@@ -5,7 +5,7 @@ import HeroVideo from '../components/HeroVideo'
 import ProductCard from '../components/ProductCard'
 import ProductImage from '../components/ProductImage'
 import { LinkButton } from '../components/Button'
-import { getProducts, assetUrl } from '../lib/api'
+import { getProducts, photoUrl } from '../lib/api'
 import { useSettings } from '../context/SettingsContext'
 import { useCollections } from '../lib/useCollections'
 import type { Product } from '../data/types'
@@ -153,6 +153,7 @@ export default function Home() {
             alt="SULTANÉ jewellery"
             category="Necklaces"
             className="aspect-[4/3] w-full"
+            size="lg"
           />
           <div>
             <div className="eyebrow text-rose-dark mb-3">Our story</div>
@@ -175,7 +176,7 @@ export default function Home() {
             return (
               <Link key={c.slug} to={`/collections/${c.slug}`} className="group relative block aspect-[3/4] overflow-hidden bg-noir">
                 {cover ? (
-                  <img src={assetUrl(cover)} alt="" loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img src={photoUrl(cover)} alt="" loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 ) : (
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,#3d2c30,#141213)]" />
                 )}

@@ -95,7 +95,7 @@ export default function ProductDetail() {
       <div className="mx-auto max-w-[1400px] px-6 sm:px-10 py-8 grid lg:grid-cols-[1.15fr_1fr] gap-10 lg:gap-16">
         {/* Gallery */}
         <div className="lg:sticky lg:top-36 h-fit">
-          <ProductImage src={images[active]?.url} alt={product.name} category={product.category} className="aspect-square w-full" loading="eager" />
+          <ProductImage src={images[active]?.url} alt={product.name} category={product.category} className="aspect-square w-full" loading="eager" size="lg" />
           {images.length > 1 && (
             <div className="grid grid-cols-5 gap-3 mt-3">
               {images.map((img, i) => (
