@@ -53,7 +53,7 @@ export default function HeroVideo({ videoUrl, posterUrl }: { videoUrl: string; p
       {/* Fallback: owner's poster image, or a rose-gold-on-black brand field */}
       <div className="absolute inset-0">
         {poster ? (
-          <img src={poster} alt="" className="w-full h-full object-cover" />
+          <img src={poster} alt="" className="w-full h-full object-cover object-[50%_62%]" />
         ) : (
           <div className="w-full h-full bg-[radial-gradient(ellipse_at_30%_20%,#3a2a2d_0%,#141213_55%,#000_100%)]" />
         )}
