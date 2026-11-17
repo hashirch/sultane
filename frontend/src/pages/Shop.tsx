@@ -215,7 +215,7 @@ export default function Shop() {
   return <Listing eyebrow="SULTANÉ" title="All Jewellery" description="Every design is made to order in silver once your payment is verified." />
 }
 
-const CATEGORY_SLUGS: Record<string, Category> = { necklaces: 'Necklaces', earrings: 'Earrings', bracelets: 'Bracelets', rings: 'Rings', chains: 'Chains', pendants: 'Pendants' }
+const CATEGORY_SLUGS: Record<string, Category> = { necklaces: 'Necklaces', earrings: 'Earrings', bracelets: 'Bracelets', rings: 'Rings', chains: 'Chains', pendants: 'Pendants', cufflinks: 'Cufflinks' }
 
 export function CategoryPage({ category }: { category: Category }) {
   const copy: Partial<Record<Category, string>> = {
@@ -236,9 +236,9 @@ export function MensPage() {
       preset={{ mens: true, category: cat }}
       eyebrow="The Men's Collection"
       title={cat ? `Men's ${cat}` : "Men's Jewellery"}
-      description="Chains, rings and bracelets with weight and presence."
+      description="Chains, rings, bracelets and cufflinks with weight and presence."
       tone="noir"
-      categories={['Chains', 'Rings', 'Bracelets']}
+      categories={['Chains', 'Rings', 'Bracelets', 'Cufflinks']}
     />
   )
 }

@@ -6,7 +6,7 @@ import ProductImage from '../components/ProductImage'
 import FileDrop from '../components/FileDrop'
 import Field from '../components/Field'
 import { Button } from '../components/Button'
-import { formatPKR } from '../lib/format'
+import { priceLabel } from '../lib/format'
 
 const IDEAS = ['Change the chain, keep the pendant', 'Different ring size', 'Different chain length or bracelet fit', 'Different finish or components']
 
@@ -123,7 +123,7 @@ export default function CustomizeExisting() {
           <ProductImage src={product.images[0]?.url} alt={product.name} category={product.category} className="aspect-square w-full mb-4" />
           <div className="font-display text-2xl">{product.name}</div>
           <div className="text-xs text-stone mb-2">Product ID · {product.sku}</div>
-          <div className="text-sm">Original design: {formatPKR(product.price)}</div>
+          <div className="text-sm">Original design: {priceLabel(product.price)}</div>
           <p className="text-xs text-stone mt-3 leading-relaxed">
             The price of a customised version may differ from the original. Want the original as shown?{' '}
             <Link to={`/product/${product.slug}`} className="underline underline-offset-2">Add it to your bag</Link> instead.

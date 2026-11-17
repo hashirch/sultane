@@ -40,6 +40,7 @@ export default function Header() {
         { label: 'Chains', to: '/mens/chains' },
         { label: 'Rings', to: '/mens/rings' },
         { label: 'Bracelets', to: '/mens/bracelets' },
+        { label: 'Cufflinks', to: '/mens/cufflinks' },
         { label: "All men's jewellery", to: '/mens' },
       ],
     },

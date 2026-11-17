@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Circle, Droplet, Gem, Link2, CircleDashed, Sparkle } from 'lucide-react'
+import { Circle, Droplet, Gem, Link2, CircleDashed, Sparkle, Square } from 'lucide-react'
 import type { Category } from '../data/types'
 import { assetUrl } from '../lib/api'
 
@@ -10,6 +10,7 @@ const ICONS: Record<Category, typeof Circle> = {
   Bracelets: CircleDashed,
   Chains: Link2,
   Necklaces: Sparkle,
+  Cufflinks: Square,
 }
 
 interface Props {

@@ -48,7 +48,7 @@ CREATE TABLE IF NOT EXISTS products (
   sku                 TEXT NOT NULL UNIQUE,                 -- unique internal product identifier
   slug                TEXT NOT NULL UNIQUE,
   name                TEXT NOT NULL,
-  category            TEXT NOT NULL CHECK (category IN ('Necklaces','Earrings','Bracelets','Rings','Chains','Pendants')),
+  category            TEXT NOT NULL CHECK (category IN ('Necklaces','Earrings','Bracelets','Rings','Chains','Pendants','Cufflinks')),
   price_pkr           INTEGER NOT NULL CHECK (price_pkr >= 0),
   description         TEXT NOT NULL DEFAULT '',
   sizes               TEXT[],

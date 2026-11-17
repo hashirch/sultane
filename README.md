@@ -40,7 +40,11 @@ Owner dashboard: `/admin/login` — the seed prints the owner login (default `ow
 
 ## Free deployment
 
-The repository includes a GitHub Pages workflow for the frontend and a Render blueprint for the API:
+**Without an API (catalogue-only, current setup):** when the `VITE_API_URL` Actions variable is not set, the GitHub Pages site runs from the bundled catalogue in `frontend/src/data/catalogue.json`. Products, photos, collections, FAQs and policies all show, and checkout sends the order to the shop on WhatsApp. Order tracking, accounts, piece verification and the owner dashboard need the API.
+
+The real product list lives in `frontend/catalogue/products.tsv`, one row per product: SKU, name, category, collection, price, photo filenames (from `frontend/public/products/`, main photo first) and description. A price of `0` shows *Price on request* with an *Ask price on WhatsApp* button. After editing it, run `cd frontend && npm run catalogue` to rebuild `src/data/catalogue.json`. The backend's `database/seed.ts` keeps the sample products the acceptance tests rely on.
+
+**With an API:** the repository also includes a Render blueprint:
 
 1. Create a free PostgreSQL database on Neon and copy its connection string.
 2. In Render, create a Blueprint from this repository using `render.yaml` and paste the Neon connection string as `DATABASE_URL`. On every start the API runs `database` `bootstrap`: it applies the schema and seeds sample data only if the database is empty. The owner dashboard password is generated as `SEED_ADMIN_PASSWORD` (Render → sultane-api → Environment).

@@ -8,7 +8,7 @@ import { slugify } from '../utils/refs'
 
 export const productsRouter = Router()
 
-export const CATEGORIES = ['Necklaces', 'Earrings', 'Bracelets', 'Rings', 'Chains', 'Pendants'] as const
+export const CATEGORIES = ['Necklaces', 'Earrings', 'Bracelets', 'Rings', 'Chains', 'Pendants', 'Cufflinks'] as const
 
 // Each product row comes back with its collection memberships and ordered images.
 const PRODUCT_SELECT = `

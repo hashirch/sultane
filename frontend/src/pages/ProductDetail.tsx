@@ -6,7 +6,8 @@ import type { Product } from '../data/types'
 import ProductImage from '../components/ProductImage'
 import ProductCard from '../components/ProductCard'
 import { Button, LinkButton } from '../components/Button'
-import { formatPKR } from '../lib/format'
+import { formatPKR, priceLabel } from '../lib/format'
+import { waLink } from '../lib/whatsapp'
 import { useCart, MAX_QTY } from '../context/CartContext'
 import { useSettings } from '../context/SettingsContext'
 import { useCollections } from '../lib/useCollections'
@@ -120,7 +121,7 @@ export default function ProductDetail() {
             {product.isPremium && <span className="eyebrow bg-rosegold text-noir px-2 py-0.5">Premium Collection</span>}
           </div>
           <h1 className="font-display text-4xl sm:text-5xl text-noir leading-[1.05] mb-3">{product.name}</h1>
-          <div className="text-2xl text-ink mb-4">{formatPKR(product.price)}</div>
+          <div className="text-2xl text-ink mb-4">{priceLabel(product.price)}</div>
 
           <div className="flex flex-wrap items-center gap-3 mb-6 text-xs">
             {product.purity925 && (
@@ -213,6 +214,15 @@ export default function ProductDetail() {
               Orders for this design are temporarily paused. You can still request a customised version or ask us on WhatsApp when
               it will be available again.
             </div>
+          ) : product.price <= 0 ? (
+            <a
+              href={waLink(settings.whatsapp_number, `Hello SULTANÉ, what is the price of the ${product.name} (${product.sku})?`)}
+              target="_blank"
+              rel="noreferrer"
+              className="block text-center bg-noir text-cream py-4 mb-3 text-[12px] uppercase tracking-[0.16em] hover:bg-ink transition-colors"
+            >
+              Ask price on WhatsApp
+            </a>
           ) : (
             <div className="flex items-stretch gap-3 mb-3">
               <div className="flex items-center border border-line">

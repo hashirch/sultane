@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import type { Product } from '../data/types'
 import ProductImage from './ProductImage'
-import { formatPKR } from '../lib/format'
+import { priceLabel } from '../lib/format'
 import { assetUrl } from '../lib/api'
 
 export default function ProductCard({ product, dark = false }: { product: Product; dark?: boolean }) {
@@ -31,7 +31,7 @@ export default function ProductCard({ product, dark = false }: { product: Produc
       <h3 className={`font-display text-xl mt-1 transition-colors ${dark ? 'text-cream group-hover:text-rose-light' : 'text-ink group-hover:text-rose-dark'}`}>
         {product.name}
       </h3>
-      <div className={`text-sm mt-1 ${dark ? 'text-silver-light' : 'text-ink'}`}>{formatPKR(product.price)}</div>
+      <div className={`text-sm mt-1 ${dark ? 'text-silver-light' : 'text-ink'}`}>{priceLabel(product.price)}</div>
     </Link>
   )
 }

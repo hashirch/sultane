@@ -16,3 +16,6 @@ export const MAJOR_CITIES = [
 export const PROVINCES = ['Sindh', 'Punjab', 'Islamabad Capital Territory', 'Khyber Pakhtunkhwa', 'Balochistan', 'Gilgit-Baltistan', 'Azad Jammu & Kashmir']
 
 export const isKarachi = (city: string) => city.trim().toLowerCase() === 'karachi'
+
+/** Shown instead of a price until the owner sets one (price 0). */
+export const priceLabel = (pkr: number) => (pkr > 0 ? formatPKR(pkr) : 'Price on request')

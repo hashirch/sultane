@@ -1,6 +1,123 @@
 {
  "products": [
   {
+   "id": "6cccf032-3bad-4c87-807d-4592e7db38ac",
+   "sku": "SLT-NK-001",
+   "slug": "aisha-arabic-name-necklace",
+   "name": "Aisha Arabic Name Necklace",
+   "category": "Necklaces",
+   "price_pkr": 0,
+   "description": "A personalised name necklace in flowing Arabic calligraphy, cut from silver and set on a fine cable chain. Made to order with the name of your choice.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": true,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 0,
+   "collections": [
+    "middle-eastern"
+   ],
+   "images": [
+    {
+     "id": "SLT-NK-001-1",
+     "url": "/products/aisha-arabic-name-necklace-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-NK-001-2",
+     "url": "/products/aisha-arabic-name-necklace-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "23acb595-2e65-4fb9-81ca-e3a62b1b3073",
+   "sku": "SLT-NK-002",
+   "slug": "fatima-arabic-name-necklace",
+   "name": "Fatima Arabic Name Necklace",
+   "category": "Necklaces",
+   "price_pkr": 0,
+   "description": "A bold Arabic name necklace in polished silver on a rolo chain. Made to order with the name of your choice.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 1,
+   "collections": [
+    "middle-eastern"
+   ],
+   "images": [
+    {
+     "id": "SLT-NK-002-1",
+     "url": "/products/fatima-arabic-name-necklace-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-NK-002-2",
+     "url": "/products/fatima-arabic-name-necklace-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "66eb4e7e-ac19-4937-9441-d6f45e4777b3",
+   "sku": "SLT-NK-003",
+   "slug": "sara-arabic-name-necklace",
+   "name": "Sara Arabic Name Necklace",
+   "category": "Necklaces",
+   "price_pkr": 0,
+   "description": "Graceful Arabic script in high-polish silver, suspended on a delicate chain. Made to order with the name of your choice.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 2,
+   "collections": [
+    "middle-eastern"
+   ],
+   "images": [
+    {
+     "id": "SLT-NK-003-1",
+     "url": "/products/sara-arabic-name-necklace-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-NK-003-2",
+     "url": "/products/sara-arabic-name-necklace-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
    "id": "c5bd4923-f13f-4add-b552-8d1beb1b10ee",
    "sku": "SLT-NK-004",
    "slug": "rose-amour-pendant",
@@ -22,59 +139,36 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 0,
+   "position": 3,
    "collections": [
     "italia"
    ],
    "images": [
     {
-     "id": "23e9240e-ea5d-4f1a-aec1-d0ac395fb59a",
+     "id": "SLT-NK-004-1",
      "url": "/products/rosa-heart-halo-necklace-1.jpg",
      "position": 0
     },
     {
-     "id": "b4311714-96b5-4a27-baa9-365cbed0b175",
-     "url": "/products/rosa-heart-halo-necklace-2.jpg",
+     "id": "SLT-NK-004-2",
+     "url": "/products/rosa-heart-halo-necklace-3.jpg",
      "position": 1
+    },
+    {
+     "id": "SLT-NK-004-3",
+     "url": "/products/rosa-heart-halo-necklace-2.jpg",
+     "position": 2
     }
    ]
   },
   {
-   "id": "6cccf032-3bad-4c87-807d-4592e7db38ac",
-   "sku": "SLT-NK-001",
-   "slug": "corso-bar-necklace",
-   "name": "Corso Bar Necklace",
+   "id": "9484ee27-e5e2-5941-ac5b-313c4df24d88",
+   "sku": "SLT-NK-005",
+   "slug": "crescent-moon-pendant",
+   "name": "Crescent Moon Pendant",
    "category": "Necklaces",
-   "price_pkr": 23500,
-   "description": "A minimal sculptural bar pendant on a fine curb chain.",
-   "sizes": null,
-   "status": "active",
-   "production_time": "7–10 working days",
-   "is_bestseller": true,
-   "is_premium": false,
-   "is_mens": false,
-   "allow_customisation": true,
-   "purity_925": true,
-   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
-   "gemstone_type": null,
-   "gemstone_origin": null,
-   "gemstone_details": null,
-   "testing_available": false,
-   "certification_info": null,
-   "position": 1,
-   "collections": [
-    "italia"
-   ],
-   "images": []
-  },
-  {
-   "id": "23acb595-2e65-4fb9-81ca-e3a62b1b3073",
-   "sku": "SLT-NK-002",
-   "slug": "onda-wave-necklace",
-   "name": "Onda Wave Necklace",
-   "category": "Necklaces",
-   "price_pkr": 25500,
-   "description": "A wave-link chain necklace with soft, sculptural movement.",
+   "price_pkr": 0,
+   "description": "A pavé crescent moon on a fine satellite chain — a quiet, luminous everyday piece.",
    "sizes": null,
    "status": "active",
    "production_time": "7–10 working days",
@@ -82,64 +176,8 @@
    "is_premium": false,
    "is_mens": false,
    "allow_customisation": true,
-   "purity_925": true,
-   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
-   "gemstone_type": null,
-   "gemstone_origin": null,
-   "gemstone_details": null,
-   "testing_available": false,
-   "certification_info": null,
-   "position": 2,
-   "collections": [
-    "italia"
-   ],
-   "images": []
-  },
-  {
-   "id": "66eb4e7e-ac19-4937-9441-d6f45e4777b3",
-   "sku": "SLT-NK-003",
-   "slug": "sahar-collar-necklace",
-   "name": "Sahar Collar Necklace",
-   "category": "Necklaces",
-   "price_pkr": 38000,
-   "description": "A bold collar silhouette with a brushed, luminous finish.",
-   "sizes": null,
-   "status": "active",
-   "production_time": "10–14 working days",
-   "is_bestseller": true,
-   "is_premium": false,
-   "is_mens": false,
-   "allow_customisation": true,
-   "purity_925": true,
-   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
-   "gemstone_type": null,
-   "gemstone_origin": null,
-   "gemstone_details": null,
-   "testing_available": false,
-   "certification_info": null,
-   "position": 3,
-   "collections": [
-    "middle-eastern"
-   ],
-   "images": []
-  },
-  {
-   "id": "5e203eb3-b3ef-4ee9-88b0-fcff322df4f8",
-   "sku": "SLT-PD-001",
-   "slug": "ayla-medallion-pendant",
-   "name": "Ayla Medallion Pendant",
-   "category": "Pendants",
-   "price_pkr": 16800,
-   "description": "An intricate medallion motif suspended on a fine chain.",
-   "sizes": null,
-   "status": "active",
-   "production_time": "7–10 working days",
-   "is_bestseller": true,
-   "is_premium": false,
-   "is_mens": false,
-   "allow_customisation": true,
-   "purity_925": true,
-   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "purity_925": false,
+   "material_note": null,
    "gemstone_type": null,
    "gemstone_origin": null,
    "gemstone_details": null,
@@ -147,46 +185,29 @@
    "certification_info": null,
    "position": 4,
    "collections": [
-    "turkish"
+    "middle-eastern"
    ],
-   "images": []
+   "images": [
+    {
+     "id": "SLT-NK-005-1",
+     "url": "/products/crescent-moon-pendant-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-NK-005-2",
+     "url": "/products/crescent-moon-pendant-2.jpg",
+     "position": 1
+    }
+   ]
   },
   {
-   "id": "fa4d8abb-45ca-420c-b0d3-b7bab36313db",
-   "sku": "SLT-ER-001",
-   "slug": "lale-drop-earrings",
-   "name": "Lale Drop Earrings",
-   "category": "Earrings",
-   "price_pkr": 18900,
-   "description": "Tulip-inspired drops with fine filigree detail.",
-   "sizes": null,
-   "status": "active",
-   "production_time": "7–10 working days",
-   "is_bestseller": false,
-   "is_premium": false,
-   "is_mens": false,
-   "allow_customisation": true,
-   "purity_925": true,
-   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
-   "gemstone_type": null,
-   "gemstone_origin": null,
-   "gemstone_details": null,
-   "testing_available": false,
-   "certification_info": null,
-   "position": 5,
-   "collections": [
-    "turkish"
-   ],
-   "images": []
-  },
-  {
-   "id": "3ebc9a73-a342-44d4-ab36-553782946536",
-   "sku": "SLT-ER-002",
-   "slug": "noor-hoop-earrings",
-   "name": "Noor Hoop Earrings",
-   "category": "Earrings",
-   "price_pkr": 14500,
-   "description": "Hammered silver hoops with a soft, luminous texture.",
+   "id": "4c473892-9e3f-50c6-afbd-0acaacf4467e",
+   "sku": "SLT-NK-006",
+   "slug": "swan-pendant",
+   "name": "Swan Pendant",
+   "category": "Necklaces",
+   "price_pkr": 0,
+   "description": "A graceful swan pavé-set with sparkling stones, on a fine silver chain.",
    "sizes": null,
    "status": "active",
    "production_time": "7–10 working days",
@@ -194,27 +215,38 @@
    "is_premium": false,
    "is_mens": false,
    "allow_customisation": true,
-   "purity_925": true,
-   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "purity_925": false,
+   "material_note": null,
    "gemstone_type": null,
    "gemstone_origin": null,
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 6,
+   "position": 5,
    "collections": [
-    "middle-eastern"
+    "italia"
    ],
-   "images": []
+   "images": [
+    {
+     "id": "SLT-NK-006-1",
+     "url": "/products/swan-pendant-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-NK-006-2",
+     "url": "/products/swan-pendant-2.jpg",
+     "position": 1
+    }
+   ]
   },
   {
-   "id": "75c7b929-5d77-4576-81f8-4f7b8ba2bee6",
-   "sku": "SLT-ER-003",
-   "slug": "vela-sculpted-studs",
-   "name": "Vela Sculpted Studs",
-   "category": "Earrings",
-   "price_pkr": 11800,
-   "description": "Small, mirror-polished sculpted studs for everyday wear.",
+   "id": "f9e08ed8-5d24-5dd6-a7de-7651afc385cb",
+   "sku": "SLT-NK-007",
+   "slug": "drop-y-necklace",
+   "name": "Drop Y Necklace",
+   "category": "Necklaces",
+   "price_pkr": 0,
+   "description": "A layered satellite chain that falls into a Y with a single sparkling drop.",
    "sizes": null,
    "status": "active",
    "production_time": "7–10 working days",
@@ -222,8 +254,47 @@
    "is_premium": false,
    "is_mens": false,
    "allow_customisation": true,
-   "purity_925": true,
-   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 6,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-NK-007-1",
+     "url": "/products/drop-y-necklace-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-NK-007-2",
+     "url": "/products/drop-y-necklace-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "8472fa1c-47c9-5fe5-aa22-21407648328d",
+   "sku": "SLT-NK-008",
+   "slug": "rose-bud-necklace",
+   "name": "Rose Bud Necklace",
+   "category": "Necklaces",
+   "price_pkr": 0,
+   "description": "A soft-pink rose bud on a silver stem with pavé leaves, set sideways on a fine chain.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
    "gemstone_type": null,
    "gemstone_origin": null,
    "gemstone_details": null,
@@ -233,49 +304,27 @@
    "collections": [
     "italia"
    ],
-   "images": []
+   "images": [
+    {
+     "id": "SLT-NK-008-1",
+     "url": "/products/rose-bud-necklace-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-NK-008-2",
+     "url": "/products/rose-bud-necklace-2.jpg",
+     "position": 1
+    }
+   ]
   },
   {
-   "id": "6e5c25e7-67f7-43cf-a6b5-fa1ff53ce4b9",
-   "sku": "SLT-BR-001",
-   "slug": "elif-link-bracelet",
-   "name": "Elif Link Bracelet",
-   "category": "Bracelets",
-   "price_pkr": 20500,
-   "description": "A refined link bracelet with a motif clasp.",
-   "sizes": [
-    "16 cm",
-    "17 cm",
-    "18 cm",
-    "19 cm"
-   ],
-   "status": "active",
-   "production_time": "7–10 working days",
-   "is_bestseller": false,
-   "is_premium": false,
-   "is_mens": false,
-   "allow_customisation": true,
-   "purity_925": true,
-   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
-   "gemstone_type": null,
-   "gemstone_origin": null,
-   "gemstone_details": null,
-   "testing_available": false,
-   "certification_info": null,
-   "position": 8,
-   "collections": [
-    "turkish"
-   ],
-   "images": []
-  },
-  {
-   "id": "65dcb4bc-7f78-413f-8a55-9539dfc9cb77",
-   "sku": "SLT-BR-002",
-   "slug": "safiya-open-cuff",
-   "name": "Safiya Open Cuff",
-   "category": "Bracelets",
-   "price_pkr": 24800,
-   "description": "A brushed, bold cuff with an adjustable open back.",
+   "id": "c1014da7-6892-552c-a425-12e42520e532",
+   "sku": "SLT-NK-009",
+   "slug": "emerald-halo-pendant",
+   "name": "Emerald Halo Pendant",
+   "category": "Necklaces",
+   "price_pkr": 0,
+   "description": "An emerald-cut green stone framed by a halo of brilliant accent stones, on a fine silver chain.",
    "sizes": null,
    "status": "active",
    "production_time": "7–10 working days",
@@ -283,8 +332,47 @@
    "is_premium": false,
    "is_mens": false,
    "allow_customisation": true,
-   "purity_925": true,
-   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 8,
+   "collections": [
+    "middle-eastern"
+   ],
+   "images": [
+    {
+     "id": "SLT-NK-009-1",
+     "url": "/products/emerald-halo-pendant-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-NK-009-2",
+     "url": "/products/emerald-halo-pendant-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "96104af3-2dde-597a-a762-023ebe1c683c",
+   "sku": "SLT-NK-010",
+   "slug": "starlight-necklace",
+   "name": "Starlight Necklace",
+   "category": "Necklaces",
+   "price_pkr": 0,
+   "description": "A constellation of pavé stars that ends in a single falling star.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
    "gemstone_type": null,
    "gemstone_origin": null,
    "gemstone_details": null,
@@ -292,31 +380,38 @@
    "certification_info": null,
    "position": 9,
    "collections": [
-    "middle-eastern"
+    "italia"
    ],
-   "images": []
+   "images": [
+    {
+     "id": "SLT-NK-010-1",
+     "url": "/products/starlight-necklace-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-NK-010-2",
+     "url": "/products/starlight-necklace-2.jpg",
+     "position": 1
+    }
+   ]
   },
   {
-   "id": "2534f9a3-1c24-47b7-9ee8-bca1655b3863",
-   "sku": "SLT-BR-003",
-   "slug": "sera-paperclip-bracelet",
-   "name": "Sera Paperclip Bracelet",
-   "category": "Bracelets",
-   "price_pkr": 15900,
-   "description": "A fluid paperclip-link bracelet designed to layer or wear alone.",
-   "sizes": [
-    "16 cm",
-    "17 cm",
-    "18 cm"
-   ],
-   "status": "paused",
+   "id": "2c2c9863-9b3e-5159-a5ec-aa1223681912",
+   "sku": "SLT-NK-011",
+   "slug": "bow-pendant",
+   "name": "Bow Pendant",
+   "category": "Necklaces",
+   "price_pkr": 0,
+   "description": "A polished silver bow holding a soft, glowing heart-shaped stone.",
+   "sizes": null,
+   "status": "active",
    "production_time": "7–10 working days",
    "is_bestseller": false,
    "is_premium": false,
    "is_mens": false,
    "allow_customisation": true,
-   "purity_925": true,
-   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "purity_925": false,
+   "material_note": null,
    "gemstone_type": null,
    "gemstone_origin": null,
    "gemstone_details": null,
@@ -326,30 +421,36 @@
    "collections": [
     "italia"
    ],
-   "images": []
+   "images": [
+    {
+     "id": "SLT-NK-011-1",
+     "url": "/products/bow-pendant-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-NK-011-2",
+     "url": "/products/bow-pendant-2.jpg",
+     "position": 1
+    }
+   ]
   },
   {
-   "id": "8c6a799e-a754-468a-9d88-c2d589059cc8",
-   "sku": "SLT-RG-001",
-   "slug": "luna-sculpted-ring",
-   "name": "Luna Sculpted Ring",
-   "category": "Rings",
-   "price_pkr": 18500,
-   "description": "A fluid crescent with a luminous surface.",
-   "sizes": [
-    "6",
-    "7",
-    "8",
-    "9"
-   ],
+   "id": "9813b8a1-6c8e-5892-ac75-e4ce4e3cfc9b",
+   "sku": "SLT-NK-012",
+   "slug": "emerald-blossom-necklace",
+   "name": "Emerald Blossom Necklace",
+   "category": "Necklaces",
+   "price_pkr": 0,
+   "description": "A statement necklace of green marquise petals and sparkling silver leaves, finished with a green teardrop.",
+   "sizes": null,
    "status": "active",
    "production_time": "7–10 working days",
    "is_bestseller": true,
    "is_premium": false,
    "is_mens": false,
    "allow_customisation": true,
-   "purity_925": true,
-   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "purity_925": false,
+   "material_note": null,
    "gemstone_type": null,
    "gemstone_origin": null,
    "gemstone_details": null,
@@ -357,32 +458,38 @@
    "certification_info": null,
    "position": 11,
    "collections": [
-    "italia"
+    "middle-eastern"
    ],
-   "images": []
+   "images": [
+    {
+     "id": "SLT-NK-012-1",
+     "url": "/products/emerald-blossom-necklace-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-NK-012-2",
+     "url": "/products/emerald-blossom-necklace-2.jpg",
+     "position": 1
+    }
+   ]
   },
   {
-   "id": "53456afb-f542-4197-9988-91e5bcc8c34e",
-   "sku": "SLT-RG-002",
-   "slug": "esma-medallion-ring",
-   "name": "Esma Medallion Ring",
-   "category": "Rings",
-   "price_pkr": 19200,
-   "description": "A miniature medallion motif set into a comfortable band.",
-   "sizes": [
-    "6",
-    "7",
-    "8",
-    "9"
-   ],
+   "id": "09a0434f-5ca0-5f51-a518-007b36289a98",
+   "sku": "SLT-NK-013",
+   "slug": "butterfly-lariat-necklace",
+   "name": "Butterfly Lariat Necklace",
+   "category": "Necklaces",
+   "price_pkr": 0,
+   "description": "A sparkling marquise butterfly with fine drop chains, worn as a delicate lariat.",
+   "sizes": null,
    "status": "active",
    "production_time": "7–10 working days",
    "is_bestseller": false,
    "is_premium": false,
    "is_mens": false,
    "allow_customisation": true,
-   "purity_925": true,
-   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "purity_925": false,
+   "material_note": null,
    "gemstone_type": null,
    "gemstone_origin": null,
    "gemstone_details": null,
@@ -390,149 +497,194 @@
    "certification_info": null,
    "position": 12,
    "collections": [
-    "turkish"
+    "italia"
    ],
-   "images": []
+   "images": [
+    {
+     "id": "SLT-NK-013-1",
+     "url": "/products/butterfly-lariat-necklace-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-NK-013-2",
+     "url": "/products/butterfly-lariat-necklace-2.jpg",
+     "position": 1
+    }
+   ]
   },
   {
-   "id": "8d1e0e68-c33f-48b1-8bf4-f0f6bccaaf33",
-   "sku": "SLT-PR-001",
-   "slug": "layla-emerald-necklace",
-   "name": "Layla Emerald Necklace",
+   "id": "563642d3-009a-5db7-a5dc-328582bf5d26",
+   "sku": "SLT-NK-014",
+   "slug": "ruby-halo-pendant",
+   "name": "Ruby Halo Pendant",
    "category": "Necklaces",
-   "price_pkr": 42000,
-   "description": "A statement necklace centred on a single emerald, framed in brushed silver.",
+   "price_pkr": 0,
+   "description": "A deep-red emerald-cut stone in a brilliant halo, on a fine silver chain.",
    "sizes": null,
    "status": "active",
-   "production_time": "14–18 working days",
-   "is_bestseller": true,
-   "is_premium": true,
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
    "is_mens": false,
    "allow_customisation": true,
-   "purity_925": true,
-   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
-   "gemstone_type": "Emerald",
-   "gemstone_origin": "natural",
-   "gemstone_details": "Single oval-cut emerald, approx. 7 × 5 mm.",
-   "testing_available": true,
-   "certification_info": "Optional independent gemstone testing. Documentation is supplied by the testing service and placed in your SULTANÉ certificate sleeve.",
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
    "position": 13,
    "collections": [
     "middle-eastern"
    ],
-   "images": []
+   "images": [
+    {
+     "id": "SLT-NK-014-1",
+     "url": "/products/ruby-halo-pendant-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-NK-014-2",
+     "url": "/products/ruby-halo-pendant-2.jpg",
+     "position": 1
+    }
+   ]
   },
   {
-   "id": "190c104b-eadc-4e30-8254-4658eec694f2",
-   "sku": "SLT-PR-002",
-   "slug": "firuze-turquoise-pendant",
-   "name": "Firuze Turquoise Pendant",
-   "category": "Pendants",
-   "price_pkr": 27500,
-   "description": "A medallion pendant set with turquoise, inspired by Ottoman motif work.",
+   "id": "448ae175-3eec-5a63-a46a-c9e42c684451",
+   "sku": "SLT-NK-015",
+   "slug": "marquise-flower-pendant",
+   "name": "Marquise Flower Pendant",
+   "category": "Necklaces",
+   "price_pkr": 0,
+   "description": "Four marquise-cut stones arranged as a flower, on a fine silver chain.",
    "sizes": null,
    "status": "active",
-   "production_time": "10–14 working days",
+   "production_time": "7–10 working days",
    "is_bestseller": false,
-   "is_premium": true,
+   "is_premium": false,
    "is_mens": false,
    "allow_customisation": true,
-   "purity_925": true,
-   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
-   "gemstone_type": "Turquoise",
-   "gemstone_origin": "natural",
-   "gemstone_details": "Cabochon turquoise, approx. 10 mm.",
-   "testing_available": true,
-   "certification_info": "Optional independent gemstone testing. Documentation is supplied by the testing service and placed in your SULTANÉ certificate sleeve.",
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
    "position": 14,
-   "collections": [
-    "turkish"
-   ],
-   "images": []
-  },
-  {
-   "id": "db2abdfa-fcbf-4df5-aae3-47568b8d3a66",
-   "sku": "SLT-PR-003",
-   "slug": "amara-ruby-ring",
-   "name": "Amara Ruby Ring",
-   "category": "Rings",
-   "price_pkr": 31500,
-   "description": "A sculpted band holding a ruby in a low, modern bezel.",
-   "sizes": [
-    "6",
-    "7",
-    "8",
-    "9"
-   ],
-   "status": "active",
-   "production_time": "10–14 working days",
-   "is_bestseller": false,
-   "is_premium": true,
-   "is_mens": false,
-   "allow_customisation": true,
-   "purity_925": true,
-   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
-   "gemstone_type": "Ruby",
-   "gemstone_origin": "lab-created",
-   "gemstone_details": "Round-cut laboratory-created ruby, approx. 5 mm.",
-   "testing_available": true,
-   "certification_info": "Optional independent gemstone testing. Documentation is supplied by the testing service and placed in your SULTANÉ certificate sleeve.",
-   "position": 15,
    "collections": [
     "italia"
    ],
-   "images": []
+   "images": [
+    {
+     "id": "SLT-NK-015-1",
+     "url": "/products/marquise-flower-pendant-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-NK-015-2",
+     "url": "/products/marquise-flower-pendant-2.jpg",
+     "position": 1
+    }
+   ]
   },
   {
-   "id": "e2dad9c3-8446-4a42-8b7b-d218e8ac0706",
-   "sku": "SLT-PR-004",
-   "slug": "zafira-sapphire-earrings",
-   "name": "Zafira Sapphire Earrings",
-   "category": "Earrings",
-   "price_pkr": 34000,
-   "description": "Drop earrings set with blue sapphires and fine granulation.",
+   "id": "d370af15-a283-5275-ab1d-5366dff805ed",
+   "sku": "SLT-NK-016",
+   "slug": "crystal-leaf-drop-necklace",
+   "name": "Crystal Leaf Drop Necklace",
+   "category": "Necklaces",
+   "price_pkr": 0,
+   "description": "A garland of sparkling crystal leaves finished with a pear-cut drop — made for occasions.",
    "sizes": null,
    "status": "active",
-   "production_time": "14–18 working days",
+   "production_time": "7–10 working days",
    "is_bestseller": false,
-   "is_premium": true,
+   "is_premium": false,
    "is_mens": false,
    "allow_customisation": true,
-   "purity_925": true,
-   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
-   "gemstone_type": "Sapphire",
-   "gemstone_origin": "natural",
-   "gemstone_details": "Pair of pear-cut sapphires, approx. 6 × 4 mm each.",
-   "testing_available": true,
-   "certification_info": "Optional independent gemstone testing. Documentation is supplied by the testing service and placed in your SULTANÉ certificate sleeve.",
-   "position": 16,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 15,
    "collections": [
-    "middle-eastern",
-    "turkish"
+    "middle-eastern"
    ],
-   "images": []
+   "images": [
+    {
+     "id": "SLT-NK-016-1",
+     "url": "/products/crystal-leaf-drop-necklace-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-NK-016-2",
+     "url": "/products/crystal-leaf-drop-necklace-2.jpg",
+     "position": 1
+    }
+   ]
   },
   {
-   "id": "be7605df-1337-4b65-92dc-f8579eb86650",
-   "sku": "SLT-MC-001",
-   "slug": "sultan-cuban-chain",
-   "name": "Sultan Cuban Chain",
-   "category": "Chains",
-   "price_pkr": 32000,
-   "description": "A heavy Cuban-link chain with a polished box clasp.",
-   "sizes": [
-    "20 in",
-    "22 in",
-    "24 in"
-   ],
+   "id": "10611c6f-d8a2-5c27-ab75-41926481a392",
+   "sku": "SLT-NK-017",
+   "slug": "double-butterfly-necklace",
+   "name": "Double Butterfly Necklace",
+   "category": "Necklaces",
+   "price_pkr": 0,
+   "description": "Two layered chains, each with a sparkling butterfly, for an effortless layered look.",
+   "sizes": null,
    "status": "active",
    "production_time": "7–10 working days",
-   "is_bestseller": true,
+   "is_bestseller": false,
    "is_premium": false,
-   "is_mens": true,
+   "is_mens": false,
    "allow_customisation": true,
-   "purity_925": true,
-   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 16,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-NK-017-1",
+     "url": "/products/double-butterfly-necklace-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-NK-017-2",
+     "url": "/products/double-butterfly-necklace-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "50976cd2-c0db-57c2-a039-3515f31920bb",
+   "sku": "SLT-NK-018",
+   "slug": "north-star-pendant",
+   "name": "North Star Pendant",
+   "category": "Necklaces",
+   "price_pkr": 0,
+   "description": "A small diamond-shaped silver charm engraved with a north star. Worn by her or him.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
    "gemstone_type": null,
    "gemstone_origin": null,
    "gemstone_details": null,
@@ -540,31 +692,43 @@
    "certification_info": null,
    "position": 17,
    "collections": [
-    "middle-eastern"
+    "italia"
    ],
-   "images": []
+   "images": [
+    {
+     "id": "SLT-NK-018-1",
+     "url": "/products/north-star-pendant-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-NK-018-2",
+     "url": "/products/north-star-pendant-2.jpg",
+     "position": 1
+    },
+    {
+     "id": "SLT-NK-018-3",
+     "url": "/products/north-star-pendant-3.jpg",
+     "position": 2
+    }
+   ]
   },
   {
-   "id": "79171298-91cf-4ef0-abd4-f8e2f6f9e031",
-   "sku": "SLT-MC-002",
-   "slug": "roma-figaro-chain",
-   "name": "Roma Figaro Chain",
-   "category": "Chains",
-   "price_pkr": 26000,
-   "description": "A classic Figaro-link chain with a confident weight.",
-   "sizes": [
-    "20 in",
-    "22 in",
-    "24 in"
-   ],
+   "id": "4e3c0788-d947-5101-a64e-0943ce83d900",
+   "sku": "SLT-NK-019",
+   "slug": "solitaire-pendant",
+   "name": "Solitaire Pendant",
+   "category": "Necklaces",
+   "price_pkr": 0,
+   "description": "A single brilliant stone on a whisper-fine chain — the everyday essential.",
+   "sizes": null,
    "status": "active",
    "production_time": "7–10 working days",
    "is_bestseller": false,
    "is_premium": false,
-   "is_mens": true,
+   "is_mens": false,
    "allow_customisation": true,
-   "purity_925": true,
-   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "purity_925": false,
+   "material_note": null,
    "gemstone_type": null,
    "gemstone_origin": null,
    "gemstone_details": null,
@@ -574,30 +738,36 @@
    "collections": [
     "italia"
    ],
-   "images": []
+   "images": [
+    {
+     "id": "SLT-NK-019-1",
+     "url": "/products/solitaire-pendant-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-NK-019-2",
+     "url": "/products/solitaire-pendant-2.jpg",
+     "position": 1
+    }
+   ]
   },
   {
-   "id": "2781ed22-61be-4742-b0f0-7d522c46121c",
-   "sku": "SLT-MR-001",
-   "slug": "osman-signet-ring",
-   "name": "Osman Signet Ring",
-   "category": "Rings",
-   "price_pkr": 22500,
-   "description": "A substantial signet ring with an engraved motif border.",
-   "sizes": [
-    "9",
-    "10",
-    "11",
-    "12"
-   ],
+   "id": "0a09a506-29b5-5221-a024-111c95ab71eb",
+   "sku": "SLT-NK-020",
+   "slug": "sapphire-starburst-pendant",
+   "name": "Sapphire Starburst Pendant",
+   "category": "Necklaces",
+   "price_pkr": 0,
+   "description": "A deep-blue stone at the heart of a sparkling starburst, on a fine silver chain.",
+   "sizes": null,
    "status": "active",
    "production_time": "7–10 working days",
    "is_bestseller": false,
    "is_premium": false,
-   "is_mens": true,
+   "is_mens": false,
    "allow_customisation": true,
-   "purity_925": true,
-   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "purity_925": false,
+   "material_note": null,
    "gemstone_type": null,
    "gemstone_origin": null,
    "gemstone_details": null,
@@ -605,32 +775,38 @@
    "certification_info": null,
    "position": 19,
    "collections": [
-    "turkish"
+    "middle-eastern"
    ],
-   "images": []
+   "images": [
+    {
+     "id": "SLT-NK-020-1",
+     "url": "/products/sapphire-starburst-pendant-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-NK-020-2",
+     "url": "/products/sapphire-starburst-pendant-2.jpg",
+     "position": 1
+    }
+   ]
   },
   {
-   "id": "db4256f6-1f09-4580-93ed-f38bf3f8f9d2",
-   "sku": "SLT-MR-002",
-   "slug": "atlas-band-ring",
-   "name": "Atlas Band Ring",
-   "category": "Rings",
-   "price_pkr": 17500,
-   "description": "A hammered, matte band with a bold profile.",
-   "sizes": [
-    "9",
-    "10",
-    "11",
-    "12"
-   ],
+   "id": "be7605df-1337-4b65-92dc-f8579eb86650",
+   "sku": "SLT-MC-001",
+   "slug": "ring-pendant-chain",
+   "name": "Ring Pendant Chain",
+   "category": "Chains",
+   "price_pkr": 0,
+   "description": "A polished silver band worn as a pendant on a box chain.",
+   "sizes": null,
    "status": "active",
    "production_time": "7–10 working days",
    "is_bestseller": false,
    "is_premium": false,
    "is_mens": true,
    "allow_customisation": true,
-   "purity_925": true,
-   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "purity_925": false,
+   "material_note": null,
    "gemstone_type": null,
    "gemstone_origin": null,
    "gemstone_details": null,
@@ -638,31 +814,38 @@
    "certification_info": null,
    "position": 20,
    "collections": [
-    "middle-eastern"
+    "italia"
    ],
-   "images": []
+   "images": [
+    {
+     "id": "SLT-MC-001-1",
+     "url": "/products/ring-pendant-chain-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-MC-001-2",
+     "url": "/products/ring-pendant-chain-2.jpg",
+     "position": 1
+    }
+   ]
   },
   {
-   "id": "c81a73a3-8426-4215-8651-4dedd8d741b5",
-   "sku": "SLT-MB-001",
-   "slug": "malik-curb-bracelet",
-   "name": "Malik Curb Bracelet",
-   "category": "Bracelets",
-   "price_pkr": 24000,
-   "description": "A wide curb-link bracelet with a secure lobster clasp.",
-   "sizes": [
-    "19 cm",
-    "20 cm",
-    "21 cm"
-   ],
+   "id": "79171298-91cf-4ef0-abd4-f8e2f6f9e031",
+   "sku": "SLT-MC-002",
+   "slug": "cross-pendant-chain",
+   "name": "Cross Pendant Chain",
+   "category": "Chains",
+   "price_pkr": 0,
+   "description": "A clean, polished silver cross on a fine chain.",
+   "sizes": null,
    "status": "active",
    "production_time": "7–10 working days",
    "is_bestseller": false,
    "is_premium": false,
    "is_mens": true,
    "allow_customisation": true,
-   "purity_925": true,
-   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "purity_925": false,
+   "material_note": null,
    "gemstone_type": null,
    "gemstone_origin": null,
    "gemstone_details": null,
@@ -670,31 +853,38 @@
    "certification_info": null,
    "position": 21,
    "collections": [
-    "middle-eastern"
+    "italia"
    ],
-   "images": []
+   "images": [
+    {
+     "id": "SLT-MC-002-1",
+     "url": "/products/cross-pendant-chain-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-MC-002-2",
+     "url": "/products/cross-pendant-chain-2.jpg",
+     "position": 1
+    }
+   ]
   },
   {
-   "id": "c76a04ea-675a-4a48-b0c1-b9875feafecd",
-   "sku": "SLT-MB-002",
-   "slug": "venezia-box-bracelet",
-   "name": "Venezia Box Bracelet",
-   "category": "Bracelets",
-   "price_pkr": 19800,
-   "description": "A sleek box-link bracelet with a mirror finish.",
-   "sizes": [
-    "19 cm",
-    "20 cm",
-    "21 cm"
-   ],
+   "id": "d872b677-98ad-5a54-ad20-0c44abad57b3",
+   "sku": "SLT-MC-003",
+   "slug": "t-bar-chain",
+   "name": "T-Bar Chain",
+   "category": "Chains",
+   "price_pkr": 0,
+   "description": "A cable chain finished with a sleek silver T-bar.",
+   "sizes": null,
    "status": "active",
    "production_time": "7–10 working days",
    "is_bestseller": false,
    "is_premium": false,
    "is_mens": true,
    "allow_customisation": true,
-   "purity_925": true,
-   "material_note": "Silver composition confirmed by the jewellery maker for this design.",
+   "purity_925": false,
+   "material_note": null,
    "gemstone_type": null,
    "gemstone_origin": null,
    "gemstone_details": null,
@@ -704,7 +894,2173 @@
    "collections": [
     "italia"
    ],
-   "images": []
+   "images": [
+    {
+     "id": "SLT-MC-003-1",
+     "url": "/products/t-bar-chain-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-MC-003-2",
+     "url": "/products/t-bar-chain-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "0bfd4fd9-ac83-54e9-ac6d-c885286aa074",
+   "sku": "SLT-MC-004",
+   "slug": "bar-pendant-chain",
+   "name": "Bar Pendant Chain",
+   "category": "Chains",
+   "price_pkr": 0,
+   "description": "A minimal vertical bar pendant on a box chain.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": true,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 23,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-MC-004-1",
+     "url": "/products/bar-pendant-chain-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-MC-004-2",
+     "url": "/products/bar-pendant-chain-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "8991200e-9217-5d39-a1f4-6e617c553d32",
+   "sku": "SLT-MC-005",
+   "slug": "feather-pendant-chain",
+   "name": "Feather Pendant Chain",
+   "category": "Chains",
+   "price_pkr": 0,
+   "description": "A finely detailed silver feather on a box chain.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": true,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 24,
+   "collections": [
+    "turkish"
+   ],
+   "images": [
+    {
+     "id": "SLT-MC-005-1",
+     "url": "/products/feather-pendant-chain-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-MC-005-2",
+     "url": "/products/feather-pendant-chain-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "4eecc18f-73be-5b13-ab98-9c6618ea1d7d",
+   "sku": "SLT-MC-006",
+   "slug": "curb-chain",
+   "name": "Curb Chain",
+   "category": "Chains",
+   "price_pkr": 0,
+   "description": "A classic flat curb chain in polished silver.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": true,
+   "is_premium": false,
+   "is_mens": true,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 25,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-MC-006-1",
+     "url": "/products/curb-chain-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-MC-006-2",
+     "url": "/products/curb-chain-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "889e8e99-158d-5e79-aba2-5c8ddcaa1d45",
+   "sku": "SLT-MC-007",
+   "slug": "rope-chain",
+   "name": "Rope Chain",
+   "category": "Chains",
+   "price_pkr": 0,
+   "description": "A twisted rope chain that catches the light from every angle.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": true,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 26,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-MC-007-1",
+     "url": "/products/rope-chain-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-MC-007-2",
+     "url": "/products/rope-chain-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "8c6a799e-a754-468a-9d88-c2d589059cc8",
+   "sku": "SLT-RG-001",
+   "slug": "blue-baguette-ring",
+   "name": "Blue Baguette Ring",
+   "category": "Rings",
+   "price_pkr": 0,
+   "description": "A slim silver band set east-west with a blue baguette-cut stone.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 27,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-RG-001-1",
+     "url": "/products/blue-baguette-ring-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-RG-001-2",
+     "url": "/products/blue-baguette-ring-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "53456afb-f542-4197-9988-91e5bcc8c34e",
+   "sku": "SLT-RG-002",
+   "slug": "floral-engraved-band",
+   "name": "Floral Engraved Band",
+   "category": "Rings",
+   "price_pkr": 0,
+   "description": "A band hand-engraved with floral scrolls and milgrain edges, finished in oxidised silver.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 28,
+   "collections": [
+    "turkish"
+   ],
+   "images": [
+    {
+     "id": "SLT-RG-002-1",
+     "url": "/products/floral-engraved-band-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-RG-002-2",
+     "url": "/products/floral-engraved-band-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "9374e567-0241-58b0-ac1b-2327665ad49e",
+   "sku": "SLT-RG-003",
+   "slug": "engraved-dome-ring",
+   "name": "Engraved Dome Ring",
+   "category": "Rings",
+   "price_pkr": 0,
+   "description": "A tapered dome ring covered in intricate engraved arabesques.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 29,
+   "collections": [
+    "turkish"
+   ],
+   "images": [
+    {
+     "id": "SLT-RG-003-1",
+     "url": "/products/engraved-dome-ring-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-RG-003-2",
+     "url": "/products/engraved-dome-ring-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "fd85dfc6-b4c8-538e-a308-9e0b053394c1",
+   "sku": "SLT-RG-004",
+   "slug": "oxidised-filigree-band",
+   "name": "Oxidised Filigree Band",
+   "category": "Rings",
+   "price_pkr": 0,
+   "description": "A wide band of deep-cut floral filigree, oxidised to bring out every detail.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 30,
+   "collections": [
+    "turkish"
+   ],
+   "images": [
+    {
+     "id": "SLT-RG-004-1",
+     "url": "/products/oxidised-filigree-band-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-RG-004-2",
+     "url": "/products/oxidised-filigree-band-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "c948b45e-d32f-5f47-a304-ce5ff5f61b1f",
+   "sku": "SLT-RG-005",
+   "slug": "scroll-band-ring",
+   "name": "Scroll Band Ring",
+   "category": "Rings",
+   "price_pkr": 0,
+   "description": "A polished band with a bold oxidised scroll pattern.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 31,
+   "collections": [
+    "turkish"
+   ],
+   "images": [
+    {
+     "id": "SLT-RG-005-1",
+     "url": "/products/scroll-band-ring-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-RG-005-2",
+     "url": "/products/scroll-band-ring-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "d968ae4a-9328-5b0e-af43-b71d6e362537",
+   "sku": "SLT-RG-006",
+   "slug": "emerald-solitaire-ring",
+   "name": "Emerald Solitaire Ring",
+   "category": "Rings",
+   "price_pkr": 0,
+   "description": "A cushion-cut green stone on a pavé-set silver band.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 32,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-RG-006-1",
+     "url": "/products/emerald-solitaire-ring-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-RG-006-2",
+     "url": "/products/emerald-solitaire-ring-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "0074ccea-efa3-5022-ac08-cf60c0f673c4",
+   "sku": "SLT-RG-007",
+   "slug": "twist-ring",
+   "name": "Twist Ring",
+   "category": "Rings",
+   "price_pkr": 0,
+   "description": "A delicate silver band that twists softly at the centre.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 33,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-RG-007-1",
+     "url": "/products/twist-ring-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-RG-007-2",
+     "url": "/products/twist-ring-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "540c05db-7c87-543d-ac2a-311d181ace03",
+   "sku": "SLT-RG-008",
+   "slug": "petite-stone-band",
+   "name": "Petite Stone Band",
+   "category": "Rings",
+   "price_pkr": 0,
+   "description": "A fine band set with a row of tiny sparkling stones — perfect for stacking.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 34,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-RG-008-1",
+     "url": "/products/petite-stone-band-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-RG-008-2",
+     "url": "/products/petite-stone-band-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "4ebae41d-8471-53cc-aaee-8e6bd593f390",
+   "sku": "SLT-RG-009",
+   "slug": "faceted-band",
+   "name": "Faceted Band",
+   "category": "Rings",
+   "price_pkr": 0,
+   "description": "A minimal band with a sharp faceted top in high-polish silver.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 35,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-RG-009-1",
+     "url": "/products/faceted-band-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-RG-009-2",
+     "url": "/products/faceted-band-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "f407d562-7a54-52eb-a273-25884c2a5471",
+   "sku": "SLT-RG-010",
+   "slug": "kite-cluster-ring",
+   "name": "Kite Cluster Ring",
+   "category": "Rings",
+   "price_pkr": 0,
+   "description": "A kite-shaped frame holding a cluster of four brilliant stones.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 36,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-RG-010-1",
+     "url": "/products/kite-cluster-ring-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-RG-010-2",
+     "url": "/products/kite-cluster-ring-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "37d7caf1-3c9b-5080-afc0-b3ce7cfdbdbf",
+   "sku": "SLT-RG-011",
+   "slug": "amethyst-ring",
+   "name": "Amethyst Ring",
+   "category": "Rings",
+   "price_pkr": 0,
+   "description": "An emerald-cut purple stone flanked by baguettes on a silver band.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 37,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-RG-011-1",
+     "url": "/products/amethyst-ring-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-RG-011-2",
+     "url": "/products/amethyst-ring-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "4845c746-8314-588b-a43f-f48188aa841e",
+   "sku": "SLT-RG-012",
+   "slug": "ruby-halo-ring",
+   "name": "Ruby Halo Ring",
+   "category": "Rings",
+   "price_pkr": 0,
+   "description": "A round red stone in a sparkling halo on a silver band.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 38,
+   "collections": [
+    "middle-eastern"
+   ],
+   "images": [
+    {
+     "id": "SLT-RG-012-1",
+     "url": "/products/ruby-halo-ring-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-RG-012-2",
+     "url": "/products/ruby-halo-ring-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "9f125a12-d093-521b-ac14-12ff25ae6e2a",
+   "sku": "SLT-RG-013",
+   "slug": "sapphire-halo-ring",
+   "name": "Sapphire Halo Ring",
+   "category": "Rings",
+   "price_pkr": 0,
+   "description": "An oval blue stone surrounded by a petal halo of brilliant stones.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 39,
+   "collections": [
+    "middle-eastern"
+   ],
+   "images": [
+    {
+     "id": "SLT-RG-013-1",
+     "url": "/products/sapphire-halo-ring-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-RG-013-2",
+     "url": "/products/sapphire-halo-ring-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "339c3e46-fafc-5f5d-a09a-0e20931a9ae8",
+   "sku": "SLT-RG-014",
+   "slug": "london-blue-ring",
+   "name": "London Blue Ring",
+   "category": "Rings",
+   "price_pkr": 0,
+   "description": "A deep-teal round stone cradled in an open, sweeping silver setting.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 40,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-RG-014-1",
+     "url": "/products/london-blue-ring-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-RG-014-2",
+     "url": "/products/london-blue-ring-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "b5764667-488a-5f2e-a5e6-a379be3ffbf3",
+   "sku": "SLT-RG-015",
+   "slug": "whale-tail-ring",
+   "name": "Whale Tail Ring",
+   "category": "Rings",
+   "price_pkr": 0,
+   "description": "An adjustable open ring finished with a polished whale tail.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 41,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-RG-015-1",
+     "url": "/products/whale-tail-ring-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-RG-015-2",
+     "url": "/products/whale-tail-ring-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "ceb206cf-bdc5-5889-a23e-49c3066f0107",
+   "sku": "SLT-RG-016",
+   "slug": "solitaire-bypass-ring",
+   "name": "Solitaire Bypass Ring",
+   "category": "Rings",
+   "price_pkr": 0,
+   "description": "A brilliant solitaire on a sweeping bypass band with pavé accents.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 42,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-RG-016-1",
+     "url": "/products/solitaire-bypass-ring-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-RG-016-2",
+     "url": "/products/solitaire-bypass-ring-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "2781ed22-61be-4742-b0f0-7d522c46121c",
+   "sku": "SLT-MR-001",
+   "slug": "green-signet-ring",
+   "name": "Green Signet Ring",
+   "category": "Rings",
+   "price_pkr": 0,
+   "description": "A substantial silver signet set with a cushion-shaped green stone.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": true,
+   "is_premium": false,
+   "is_mens": true,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 43,
+   "collections": [
+    "middle-eastern"
+   ],
+   "images": [
+    {
+     "id": "SLT-MR-001-1",
+     "url": "/products/green-signet-ring-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-MR-001-2",
+     "url": "/products/green-signet-ring-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "db4256f6-1f09-4580-93ed-f38bf3f8f9d2",
+   "sku": "SLT-MR-002",
+   "slug": "north-star-signet-ring",
+   "name": "North Star Signet Ring",
+   "category": "Rings",
+   "price_pkr": 0,
+   "description": "A round signet ring engraved with a north star and set with a single stone.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": true,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 44,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-MR-002-1",
+     "url": "/products/north-star-signet-ring-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-MR-002-2",
+     "url": "/products/north-star-signet-ring-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "d51e7e4d-a357-556b-a2d9-b77c599f03b4",
+   "sku": "SLT-MR-003",
+   "slug": "carnelian-signet-ring",
+   "name": "Carnelian Signet Ring",
+   "category": "Rings",
+   "price_pkr": 0,
+   "description": "A classic oval signet set with a deep-red stone.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": true,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 45,
+   "collections": [
+    "middle-eastern"
+   ],
+   "images": [
+    {
+     "id": "SLT-MR-003-1",
+     "url": "/products/carnelian-signet-ring-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-MR-003-2",
+     "url": "/products/carnelian-signet-ring-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "d9d12307-bc00-5bb3-a89a-4cc4f91cc9fc",
+   "sku": "SLT-MR-004",
+   "slug": "grooved-band-ring",
+   "name": "Grooved Band Ring",
+   "category": "Rings",
+   "price_pkr": 0,
+   "description": "A wide polished band with twin oxidised grooves.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": true,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 46,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-MR-004-1",
+     "url": "/products/grooved-band-ring-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-MR-004-2",
+     "url": "/products/grooved-band-ring-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "95d3a1d6-c0ad-50a8-af74-90be5b16d4fa",
+   "sku": "SLT-MR-005",
+   "slug": "square-signet-ring",
+   "name": "Square Signet Ring",
+   "category": "Rings",
+   "price_pkr": 0,
+   "description": "A clean, flat-topped square signet in polished silver.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": true,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 47,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-MR-005-1",
+     "url": "/products/square-signet-ring-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-MR-005-2",
+     "url": "/products/square-signet-ring-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "6e5c25e7-67f7-43cf-a6b5-fa1ff53ce4b9",
+   "sku": "SLT-BR-001",
+   "slug": "figaro-bracelet",
+   "name": "Figaro Bracelet",
+   "category": "Bracelets",
+   "price_pkr": 0,
+   "description": "A classic Figaro-link chain bracelet in polished silver.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 48,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-BR-001-1",
+     "url": "/products/figaro-bracelet-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-BR-001-2",
+     "url": "/products/figaro-bracelet-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "65dcb4bc-7f78-413f-8a55-9539dfc9cb77",
+   "sku": "SLT-BR-002",
+   "slug": "turquoise-medallion-bracelet",
+   "name": "Turquoise Medallion Bracelet",
+   "category": "Bracelets",
+   "price_pkr": 0,
+   "description": "An engraved silver medallion between turquoise beads, with a toggle clasp.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 49,
+   "collections": [
+    "turkish"
+   ],
+   "images": [
+    {
+     "id": "SLT-BR-002-1",
+     "url": "/products/turquoise-medallion-bracelet-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-BR-002-2",
+     "url": "/products/turquoise-medallion-bracelet-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "2534f9a3-1c24-47b7-9ee8-bca1655b3863",
+   "sku": "SLT-BR-003",
+   "slug": "filigree-cuff",
+   "name": "Filigree Cuff",
+   "category": "Bracelets",
+   "price_pkr": 0,
+   "description": "A wide cuff with bands of vine filigree and rope borders.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 50,
+   "collections": [
+    "turkish"
+   ],
+   "images": [
+    {
+     "id": "SLT-BR-003-1",
+     "url": "/products/filigree-cuff-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-BR-003-2",
+     "url": "/products/filigree-cuff-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "68dcfe8e-b72d-54af-a4e0-f63d87c7e2ea",
+   "sku": "SLT-BR-004",
+   "slug": "evil-eye-bracelet",
+   "name": "Evil Eye Bracelet",
+   "category": "Bracelets",
+   "price_pkr": 0,
+   "description": "A fine chain bracelet with a blue evil-eye charm for protection.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": true,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 51,
+   "collections": [
+    "turkish"
+   ],
+   "images": [
+    {
+     "id": "SLT-BR-004-1",
+     "url": "/products/evil-eye-bracelet-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-BR-004-2",
+     "url": "/products/evil-eye-bracelet-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "fbd9d550-8909-5cf1-a215-68d4fb09ea4d",
+   "sku": "SLT-BR-005",
+   "slug": "wheat-chain-bracelet",
+   "name": "Wheat Chain Bracelet",
+   "category": "Bracelets",
+   "price_pkr": 0,
+   "description": "A braided wheat-chain bracelet with a lobster clasp.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 52,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-BR-005-1",
+     "url": "/products/wheat-chain-bracelet-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-BR-005-2",
+     "url": "/products/wheat-chain-bracelet-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "60762cbf-3443-52cd-a694-142b024870af",
+   "sku": "SLT-BR-006",
+   "slug": "wheat-slider-bracelet",
+   "name": "Wheat Slider Bracelet",
+   "category": "Bracelets",
+   "price_pkr": 0,
+   "description": "A wheat-chain bracelet with an adjustable slider and bead ends.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 53,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-BR-006-1",
+     "url": "/products/wheat-slider-bracelet-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-BR-006-2",
+     "url": "/products/wheat-slider-bracelet-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "4156040f-4b83-5855-a5c9-9ccdf4da3363",
+   "sku": "SLT-BR-007",
+   "slug": "bead-station-bracelet",
+   "name": "Bead Station Bracelet",
+   "category": "Bracelets",
+   "price_pkr": 0,
+   "description": "A fine chain bracelet set with polished silver beads.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 54,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-BR-007-1",
+     "url": "/products/bead-station-bracelet-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-BR-007-2",
+     "url": "/products/bead-station-bracelet-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "91d87beb-26fe-58f7-a099-134707bbff6f",
+   "sku": "SLT-BR-008",
+   "slug": "crescent-charm-bracelet",
+   "name": "Crescent Charm Bracelet",
+   "category": "Bracelets",
+   "price_pkr": 0,
+   "description": "A delicate chain bracelet with a pavé crescent moon charm.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 55,
+   "collections": [
+    "middle-eastern"
+   ],
+   "images": [
+    {
+     "id": "SLT-BR-008-1",
+     "url": "/products/crescent-charm-bracelet-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-BR-008-2",
+     "url": "/products/crescent-charm-bracelet-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "1047dfcc-4870-579b-a31f-50e3c98681ca",
+   "sku": "SLT-BR-009",
+   "slug": "filigree-bead-bracelet",
+   "name": "Filigree Bead Bracelet",
+   "category": "Bracelets",
+   "price_pkr": 0,
+   "description": "Hand-worked filigree beads linked on a silver chain.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 56,
+   "collections": [
+    "turkish"
+   ],
+   "images": [
+    {
+     "id": "SLT-BR-009-1",
+     "url": "/products/filigree-bead-bracelet-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-BR-009-2",
+     "url": "/products/filigree-bead-bracelet-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "85cc04e8-6c03-5e0e-a843-282bf18084e2",
+   "sku": "SLT-BR-010",
+   "slug": "clover-bracelet",
+   "name": "Clover Bracelet",
+   "category": "Bracelets",
+   "price_pkr": 0,
+   "description": "A pavé four-leaf clover on a fine chain bracelet — a little luck, every day.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 57,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-BR-010-1",
+     "url": "/products/clover-bracelet-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-BR-010-2",
+     "url": "/products/clover-bracelet-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "4e95db4c-f491-5aa4-af8c-3d6dfb5835d0",
+   "sku": "SLT-BR-011",
+   "slug": "leaf-hand-chain",
+   "name": "Leaf Hand Chain",
+   "category": "Bracelets",
+   "price_pkr": 0,
+   "description": "A hand chain of sparkling leaves that links bracelet to ring.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 58,
+   "collections": [
+    "middle-eastern"
+   ],
+   "images": [
+    {
+     "id": "SLT-BR-011-1",
+     "url": "/products/leaf-hand-chain-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-BR-011-2",
+     "url": "/products/leaf-hand-chain-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "fedf71d8-bae4-5655-a909-ad6bf08e46c8",
+   "sku": "SLT-BR-012",
+   "slug": "dotted-hand-chain",
+   "name": "Dotted Hand Chain",
+   "category": "Bracelets",
+   "price_pkr": 0,
+   "description": "A fine satellite hand chain connecting bracelet and ring.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 59,
+   "collections": [
+    "middle-eastern"
+   ],
+   "images": [
+    {
+     "id": "SLT-BR-012-1",
+     "url": "/products/dotted-hand-chain-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-BR-012-2",
+     "url": "/products/dotted-hand-chain-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "fa4d8abb-45ca-420c-b0d3-b7bab36313db",
+   "sku": "SLT-ER-001",
+   "slug": "geometric-knot-earrings",
+   "name": "Geometric Knot Earrings",
+   "category": "Earrings",
+   "price_pkr": 0,
+   "description": "Interlocking geometric drops in polished silver.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 60,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-ER-001-1",
+     "url": "/products/geometric-knot-earrings-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-ER-001-2",
+     "url": "/products/geometric-knot-earrings-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "3ebc9a73-a342-44d4-ab36-553782946536",
+   "sku": "SLT-ER-002",
+   "slug": "blue-enamel-chandbali",
+   "name": "Blue Enamel Chandbali Earrings",
+   "category": "Earrings",
+   "price_pkr": 0,
+   "description": "Crescent chandbalis with blue enamel florals and a fringe of silver beads.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": true,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 61,
+   "collections": [
+    "middle-eastern"
+   ],
+   "images": [
+    {
+     "id": "SLT-ER-002-1",
+     "url": "/products/blue-enamel-chandbali-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-ER-002-2",
+     "url": "/products/blue-enamel-chandbali-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "75c7b929-5d77-4576-81f8-4f7b8ba2bee6",
+   "sku": "SLT-ER-003",
+   "slug": "coin-chandelier-earrings",
+   "name": "Coin Chandelier Earrings",
+   "category": "Earrings",
+   "price_pkr": 0,
+   "description": "Tiers of engraved coins and filigree, inspired by Ottoman adornment.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 62,
+   "collections": [
+    "turkish"
+   ],
+   "images": [
+    {
+     "id": "SLT-ER-003-1",
+     "url": "/products/coin-chandelier-earrings-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-ER-003-2",
+     "url": "/products/coin-chandelier-earrings-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "81257a1a-ae96-549b-a3f3-42330e3d6e03",
+   "sku": "SLT-ER-004",
+   "slug": "medallion-disc-earrings",
+   "name": "Medallion Disc Earrings",
+   "category": "Earrings",
+   "price_pkr": 0,
+   "description": "Large engraved medallion discs on hook wires — a bold traditional statement.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 63,
+   "collections": [
+    "turkish"
+   ],
+   "images": [
+    {
+     "id": "SLT-ER-004-1",
+     "url": "/products/medallion-disc-earrings-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-ER-004-2",
+     "url": "/products/medallion-disc-earrings-2.jpg",
+     "position": 1
+    },
+    {
+     "id": "SLT-ER-004-3",
+     "url": "/products/medallion-disc-earrings-3.jpg",
+     "position": 2
+    },
+    {
+     "id": "SLT-ER-004-4",
+     "url": "/products/medallion-disc-earrings-4.jpg",
+     "position": 3
+    }
+   ]
+  },
+  {
+   "id": "6d545bf8-7f8a-5397-a452-3db3aa0a5818",
+   "sku": "SLT-ER-005",
+   "slug": "filigree-chandelier-earrings",
+   "name": "Filigree Chandelier Earrings",
+   "category": "Earrings",
+   "price_pkr": 0,
+   "description": "Long filigree chandeliers with leaf-shaped drops.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 64,
+   "collections": [
+    "turkish"
+   ],
+   "images": [
+    {
+     "id": "SLT-ER-005-1",
+     "url": "/products/filigree-chandelier-earrings-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-ER-005-2",
+     "url": "/products/filigree-chandelier-earrings-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "6f180849-4747-5135-a8c8-f711dce76b99",
+   "sku": "SLT-ER-006",
+   "slug": "grand-chandbali-earrings",
+   "name": "Grand Chandbali Earrings",
+   "category": "Earrings",
+   "price_pkr": 0,
+   "description": "Oversized tiered chandbalis with engraved medallions and a beaded fringe.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 65,
+   "collections": [
+    "middle-eastern"
+   ],
+   "images": [
+    {
+     "id": "SLT-ER-006-1",
+     "url": "/products/grand-chandbali-earrings-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-ER-006-2",
+     "url": "/products/grand-chandbali-earrings-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "ba1e4ab2-8af2-5ddc-af77-155ad0bc1569",
+   "sku": "SLT-ER-007",
+   "slug": "silver-ball-drop-earrings",
+   "name": "Silver Ball Drop Earrings",
+   "category": "Earrings",
+   "price_pkr": 0,
+   "description": "Textured silver ball drops on lever-back hooks.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 66,
+   "collections": [
+    "turkish"
+   ],
+   "images": [
+    {
+     "id": "SLT-ER-007-1",
+     "url": "/products/silver-ball-drop-earrings-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-ER-007-2",
+     "url": "/products/silver-ball-drop-earrings-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "685394bb-d8b4-5106-a81c-776cdcfa0899",
+   "sku": "SLT-ER-008",
+   "slug": "puffy-crescent-hoops",
+   "name": "Puffy Crescent Hoops",
+   "category": "Earrings",
+   "price_pkr": 0,
+   "description": "Sculptural, high-polish crescent hoops with a puffed silhouette.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 67,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-ER-008-1",
+     "url": "/products/puffy-crescent-hoops-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-ER-008-2",
+     "url": "/products/puffy-crescent-hoops-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "449894d7-db40-5ec3-a13d-7abcd7a17b45",
+   "sku": "SLT-ER-009",
+   "slug": "wide-hoop-earrings",
+   "name": "Wide Hoop Earrings",
+   "category": "Earrings",
+   "price_pkr": 0,
+   "description": "Wide, polished hoops with a secure click closure.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 68,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-ER-009-1",
+     "url": "/products/wide-hoop-earrings-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-ER-009-2",
+     "url": "/products/wide-hoop-earrings-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "e13dd057-ef8b-571b-a5ca-ea6941cb8049",
+   "sku": "SLT-ER-010",
+   "slug": "disc-drop-earrings",
+   "name": "Disc Drop Earrings",
+   "category": "Earrings",
+   "price_pkr": 0,
+   "description": "Huggie hoops with tiny discs and a long polished bar drop.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 69,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-ER-010-1",
+     "url": "/products/disc-drop-earrings-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-ER-010-2",
+     "url": "/products/disc-drop-earrings-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "2659c046-ec65-5d27-a63d-e7ad0ae7f52e",
+   "sku": "SLT-ER-011",
+   "slug": "huggie-hoops",
+   "name": "Huggie Hoops",
+   "category": "Earrings",
+   "price_pkr": 0,
+   "description": "Small, flat-edged huggie hoops — worn by her or him.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 70,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-ER-011-1",
+     "url": "/products/huggie-hoops-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-ER-011-2",
+     "url": "/products/huggie-hoops-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "0813f171-da5d-5fce-a359-2e9262c42312",
+   "sku": "SLT-ER-012",
+   "slug": "crystal-bar-drop-earrings",
+   "name": "Crystal Bar Drop Earrings",
+   "category": "Earrings",
+   "price_pkr": 0,
+   "description": "A brilliant stud with a fine chain and polished bar drop.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 71,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-ER-012-1",
+     "url": "/products/crystal-bar-drop-earrings-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-ER-012-2",
+     "url": "/products/crystal-bar-drop-earrings-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "6a338a4c-dd78-5324-a56f-9ebfc1ecec1c",
+   "sku": "SLT-ER-013",
+   "slug": "crystal-tassel-earrings",
+   "name": "Crystal Tassel Earrings",
+   "category": "Earrings",
+   "price_pkr": 0,
+   "description": "Long tassels of sparkling crystal strands for evenings.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 72,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-ER-013-1",
+     "url": "/products/crystal-tassel-earrings-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-ER-013-2",
+     "url": "/products/crystal-tassel-earrings-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "6127b384-dc23-5f65-adce-627f2fd49abe",
+   "sku": "SLT-ER-014",
+   "slug": "onyx-bar-earrings",
+   "name": "Onyx Bar Earrings",
+   "category": "Earrings",
+   "price_pkr": 0,
+   "description": "A black stone set above long, staggered silver bars.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 73,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-ER-014-1",
+     "url": "/products/onyx-bar-earrings-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-ER-014-2",
+     "url": "/products/onyx-bar-earrings-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "4262597f-4e88-5229-afe1-9502d1f2b7d7",
+   "sku": "SLT-ER-015",
+   "slug": "star-studs",
+   "name": "Star Studs",
+   "category": "Earrings",
+   "price_pkr": 0,
+   "description": "Polished four-point star studs — worn by her or him.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 74,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-ER-015-1",
+     "url": "/products/star-studs-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-ER-015-2",
+     "url": "/products/star-studs-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "3c708535-00b8-5ac9-adb1-54fbea4b0d21",
+   "sku": "SLT-ER-016",
+   "slug": "halo-drop-earrings",
+   "name": "Halo Drop Earrings",
+   "category": "Earrings",
+   "price_pkr": 0,
+   "description": "A brilliant stud, an open circle and a long sparkling drop.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": false,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 75,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-ER-016-1",
+     "url": "/products/halo-drop-earrings-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-ER-016-2",
+     "url": "/products/halo-drop-earrings-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "4a952aff-27ec-58c1-a267-7246ff675b10",
+   "sku": "SLT-CL-001",
+   "slug": "onyx-cufflinks",
+   "name": "Onyx Cufflinks",
+   "category": "Cufflinks",
+   "price_pkr": 0,
+   "description": "Round black-stone cufflinks framed by a halo of sparkling stones.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": true,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 76,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-CL-001-1",
+     "url": "/products/onyx-cufflinks-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-CL-001-2",
+     "url": "/products/onyx-cufflinks-2.jpg",
+     "position": 1
+    }
+   ]
+  },
+  {
+   "id": "e38590ff-b98e-5dc3-a042-32d3089121c9",
+   "sku": "SLT-CL-002",
+   "slug": "square-cufflinks",
+   "name": "Square Cufflinks",
+   "category": "Cufflinks",
+   "price_pkr": 0,
+   "description": "Clean, polished square cufflinks for the modern shirt cuff.",
+   "sizes": null,
+   "status": "active",
+   "production_time": "7–10 working days",
+   "is_bestseller": false,
+   "is_premium": false,
+   "is_mens": true,
+   "allow_customisation": true,
+   "purity_925": false,
+   "material_note": null,
+   "gemstone_type": null,
+   "gemstone_origin": null,
+   "gemstone_details": null,
+   "testing_available": false,
+   "certification_info": null,
+   "position": 77,
+   "collections": [
+    "italia"
+   ],
+   "images": [
+    {
+     "id": "SLT-CL-002-1",
+     "url": "/products/square-cufflinks-1.jpg",
+     "position": 0
+    },
+    {
+     "id": "SLT-CL-002-2",
+     "url": "/products/square-cufflinks-2.jpg",
+     "position": 1
+    }
+   ]
   }
  ],
  "collections": [
@@ -715,7 +3071,7 @@
    "description": "Soft, poured silhouettes and polished links inspired by Italian jewellery traditions. A design language — not a claim of manufacturing origin.",
    "image_url": null,
    "position": 1,
-   "product_count": 9
+   "product_count": 47
   },
   {
    "slug": "turkish",
@@ -724,7 +3080,7 @@
    "description": "Medallions, filigree and motif work inspired by Turkish decorative arts, rendered in silver for the modern wardrobe.",
    "image_url": null,
    "position": 2,
-   "product_count": 7
+   "product_count": 13
   },
   {
    "slug": "middle-eastern",
@@ -733,15 +3089,10 @@
    "description": "Confident, sculptural silhouettes with hammered and brushed finishes, drawing on the regal jewellery traditions of the Middle East.",
    "image_url": null,
    "position": 3,
-   "product_count": 8
+   "product_count": 18
   }
  ],
- "gemstones": [
-  "Emerald",
-  "Ruby",
-  "Sapphire",
-  "Turquoise"
- ],
+ "gemstones": [],
  "settings": {
   "whatsapp_number": "923000000000",
   "delivery_fee_karachi_pkr": 0,

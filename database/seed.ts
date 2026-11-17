@@ -36,7 +36,7 @@ type SeedProduct = {
   sku: string
   slug: string
   name: string
-  category: 'Necklaces' | 'Earrings' | 'Bracelets' | 'Rings' | 'Chains' | 'Pendants'
+  category: 'Necklaces' | 'Earrings' | 'Bracelets' | 'Rings' | 'Chains' | 'Pendants' | 'Cufflinks'
   price: number
   description: string
   collections: string[]

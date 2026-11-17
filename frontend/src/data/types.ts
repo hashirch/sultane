@@ -1,5 +1,5 @@
-export type Category = 'Necklaces' | 'Earrings' | 'Bracelets' | 'Rings' | 'Chains' | 'Pendants'
-export const CATEGORIES: Category[] = ['Necklaces', 'Earrings', 'Bracelets', 'Rings', 'Chains', 'Pendants']
+export type Category = 'Necklaces' | 'Earrings' | 'Bracelets' | 'Rings' | 'Chains' | 'Pendants' | 'Cufflinks'
+export const CATEGORIES: Category[] = ['Necklaces', 'Earrings', 'Bracelets', 'Rings', 'Chains', 'Pendants', 'Cufflinks']
 
 export interface Collection {
   slug: string
