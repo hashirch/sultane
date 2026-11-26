@@ -42,6 +42,8 @@ export interface Product {
   position: number
   collections: string[]
   images: ProductImage[]
+  /** Date the product was launched (YYYY-MM-DD); drives the New Arrivals section. */
+  launchedAt: string | null
 }
 
 export interface BankDetails {
@@ -73,6 +75,8 @@ export interface SiteSettings {
   policy_returns: string
   policy_privacy: string
   policy_terms: string
+  /** How many days a newly launched product stays in New Arrivals. */
+  new_arrival_days?: number
 }
 
 export type OrderStatus =

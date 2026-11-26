@@ -97,6 +97,7 @@ export function mapProduct(p: any): Product {
     position: p.position,
     collections: p.collections ?? [],
     images: p.images ?? [],
+    launchedAt: p.launched_at ?? null,
   }
 }
 
@@ -143,6 +144,7 @@ function filterCatalogue(q: ProductQuery): any[] {
   const term = q.q?.trim().toLowerCase()
   const rows = (catalogue.products as any[]).filter(
     (p) =>
+      p.status !== 'draft' &&
       (!cats || cats.includes(p.category)) &&
       (!cols || p.collections.some((c: string) => cols.includes(c))) &&
       (q.gemstone !== 'any' || p.gemstone_type) &&
@@ -180,7 +182,7 @@ export const getGemstoneTypes = () => orCatalogue(() => request<string[]>('/prod
 
 export async function getProduct(slug: string): Promise<Product | null> {
   const bundled = () => {
-    const row = catalogue.products.find((p) => p.slug === slug)
+    const row = catalogue.products.find((p) => p.slug === slug && p.status !== 'draft')
     return row ? mapProduct(row) : null
   }
   try {

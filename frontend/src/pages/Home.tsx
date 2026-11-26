@@ -9,6 +9,7 @@ import { getProducts, photoUrl } from '../lib/api'
 import { useSettings } from '../context/SettingsContext'
 import { useCollections } from '../lib/useCollections'
 import type { Product } from '../data/types'
+import { DEFAULT_NEW_ARRIVAL_DAYS, newArrivals } from '../lib/newArrivals'
 
 function SectionHead({ eyebrow, title, link, dark = false }: { eyebrow: string; title: string; link?: { to: string; label: string }; dark?: boolean }) {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
     getProducts().then(setProducts).catch(() => setProducts([]))
   }, [])
 
+  const fresh = newArrivals(products ?? [], Number(settings.new_arrival_days) || DEFAULT_NEW_ARRIVAL_DAYS).slice(0, 8)
   const bestsellers = (products ?? []).filter((p) => p.isBestseller).slice(0, 8)
   const premium = (products ?? []).filter((p) => p.isPremium).slice(0, 4)
   const mens = (products ?? []).filter((p) => p.isMens).slice(0, 4)
@@ -61,6 +63,16 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* New Arrivals — shown only while recently launched pieces exist */}
+      {fresh.length > 0 && (
+        <section className="mx-auto max-w-[1400px] px-6 sm:px-10 pt-16 sm:pt-24">
+          <SectionHead eyebrow="Just launched" title="New Arrivals" link={{ to: '/new-arrivals', label: 'See all new arrivals' }} />
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 sm:gap-x-6 gap-y-10">
+            {fresh.map((p) => <ProductCard key={p.id} product={p} />)}
+          </div>
+        </section>
+      )}
 
       {/* 2 — Bestsellers */}
       <section className="mx-auto max-w-[1400px] px-6 sm:px-10 py-16 sm:py-24">

@@ -3,6 +3,7 @@ import { Routes, Route, useLocation, Navigate } from 'react-router-dom'
 import Layout from './components/Layout'
 
 import Home from './pages/Home'
+import NewArrivals from './pages/NewArrivals'
 import Shop, { CategoryPage, MensPage, PremiumPage } from './pages/Shop'
 import Collections, { CollectionLanding } from './pages/Collections'
 import ProductDetail from './pages/ProductDetail'
@@ -19,6 +20,7 @@ import { About, Care, Contact, Faq, Policy } from './pages/Info'
 
 import RequireAdmin from './components/admin/RequireAdmin'
 import AdminLogin from './pages/admin/AdminLogin'
+import { CATALOGUE_ONLY } from './lib/api'
 
 // The owner's dashboard is loaded on demand so shoppers never download it.
 const AdminOverview = lazy(() => import('./pages/admin/AdminOverview'))
@@ -28,6 +30,8 @@ const AdminCatalogue = lazy(() => import('./pages/admin/AdminCatalogue'))
 const AdminRegistry = lazy(() => import('./pages/admin/AdminRegistry'))
 const AdminPromotions = lazy(() => import('./pages/admin/AdminPromotions'))
 const AdminSettings = lazy(() => import('./pages/admin/AdminSettings'))
+// Static site (no API): the dashboard edits the catalogue in the GitHub repository.
+const Studio = lazy(() => import('./studio/Studio'))
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -48,18 +52,31 @@ export default function App() {
     <>
       <ScrollToTop />
       <Routes>
-        <Route path="/admin" element={<Navigate to="/admin/overview" replace />} />
-        <Route path="/admin/login" element={<AdminLogin />} />
-        <Route path="/admin/overview" element={admin(<AdminOverview />)} />
-        <Route path="/admin/orders" element={admin(<AdminOrders />)} />
-        <Route path="/admin/orders/:ref" element={admin(<AdminOrders />)} />
-        <Route path="/admin/enquiries" element={admin(<AdminEnquiries />)} />
-        <Route path="/admin/enquiries/:ref" element={admin(<AdminEnquiries />)} />
-        <Route path="/admin/catalogue" element={admin(<AdminCatalogue />)} />
-        <Route path="/admin/catalogue/:id" element={admin(<AdminCatalogue />)} />
-        <Route path="/admin/registry" element={admin(<AdminRegistry />)} />
-        <Route path="/admin/promotions" element={admin(<AdminPromotions />)} />
-        <Route path="/admin/settings" element={admin(<AdminSettings />)} />
+        {CATALOGUE_ONLY ? (
+          <Route
+            path="/admin/*"
+            element={
+              <Suspense fallback={<div className="p-10 text-stone">Loading…</div>}>
+                <Studio />
+              </Suspense>
+            }
+          />
+        ) : (
+          <>
+          <Route path="/admin" element={<Navigate to="/admin/overview" replace />} />
+          <Route path="/admin/login" element={<AdminLogin />} />
+          <Route path="/admin/overview" element={admin(<AdminOverview />)} />
+          <Route path="/admin/orders" element={admin(<AdminOrders />)} />
+          <Route path="/admin/orders/:ref" element={admin(<AdminOrders />)} />
+          <Route path="/admin/enquiries" element={admin(<AdminEnquiries />)} />
+          <Route path="/admin/enquiries/:ref" element={admin(<AdminEnquiries />)} />
+          <Route path="/admin/catalogue" element={admin(<AdminCatalogue />)} />
+          <Route path="/admin/catalogue/:id" element={admin(<AdminCatalogue />)} />
+          <Route path="/admin/registry" element={admin(<AdminRegistry />)} />
+          <Route path="/admin/promotions" element={admin(<AdminPromotions />)} />
+          <Route path="/admin/settings" element={admin(<AdminSettings />)} />
+          </>
+        )}
 
         <Route
           path="*"
@@ -68,6 +85,7 @@ export default function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/shop" element={<Shop />} />
+                <Route path="/new-arrivals" element={<NewArrivals />} />
                 <Route path="/necklaces" element={<CategoryPage key="n" category="Necklaces" />} />
                 <Route path="/earrings" element={<CategoryPage key="e" category="Earrings" />} />
                 <Route path="/bracelets" element={<CategoryPage key="b" category="Bracelets" />} />

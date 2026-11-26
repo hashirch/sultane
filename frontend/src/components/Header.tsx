@@ -6,6 +6,7 @@ import { useCart } from '../context/CartContext'
 import { useSettings } from '../context/SettingsContext'
 import { useCustomer } from '../context/CustomerContext'
 import { useCollections } from '../lib/useCollections'
+import { useNewArrivals } from '../lib/useNewArrivals'
 import Wordmark from './Wordmark'
 
 interface NavItem {
@@ -20,6 +21,7 @@ export default function Header() {
   const { settings } = useSettings()
   const { customer } = useCustomer()
   const collections = useCollections()
+  const { products: fresh } = useNewArrivals()
   const location = useLocation()
   const navigate = useNavigate()
 
@@ -30,6 +32,7 @@ export default function Header() {
   const searchRef = useRef<HTMLInputElement>(null)
 
   const nav: NavItem[] = [
+    ...(fresh?.length ? [{ label: 'New Arrivals', to: '/new-arrivals', accent: true }] : []),
     { label: 'Necklaces', to: '/necklaces' },
     { label: 'Earrings', to: '/earrings' },
     { label: 'Bracelets', to: '/bracelets' },
