@@ -79,45 +79,6 @@
    ]
   },
   {
-   "id": "66eb4e7e-ac19-4937-9441-d6f45e4777b3",
-   "sku": "SLT-NK-003",
-   "slug": "sara-arabic-name-necklace",
-   "name": "Sara Arabic Name Necklace",
-   "category": "Necklaces",
-   "price_pkr": 0,
-   "description": "Graceful Arabic script in high-polish silver, suspended on a delicate chain. Made to order with the name of your choice.",
-   "sizes": null,
-   "status": "active",
-   "production_time": "7–10 working days",
-   "is_bestseller": false,
-   "is_premium": false,
-   "is_mens": false,
-   "allow_customisation": true,
-   "purity_925": false,
-   "material_note": null,
-   "gemstone_type": null,
-   "gemstone_origin": null,
-   "gemstone_details": null,
-   "testing_available": false,
-   "certification_info": null,
-   "position": 2,
-   "collections": [
-    "middle-eastern"
-   ],
-   "images": [
-    {
-     "id": "SLT-NK-003-1",
-     "url": "/products/sara-arabic-name-necklace-1.jpg",
-     "position": 0
-    },
-    {
-     "id": "SLT-NK-003-2",
-     "url": "/products/sara-arabic-name-necklace-2.jpg",
-     "position": 1
-    }
-   ]
-  },
-  {
    "id": "c5bd4923-f13f-4add-b552-8d1beb1b10ee",
    "sku": "SLT-NK-004",
    "slug": "rose-amour-pendant",
@@ -139,7 +100,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 3,
+   "position": 2,
    "collections": [
     "italia"
    ],
@@ -183,7 +144,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 4,
+   "position": 3,
    "collections": [
     "middle-eastern"
    ],
@@ -222,7 +183,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 5,
+   "position": 4,
    "collections": [
     "italia"
    ],
@@ -261,7 +222,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 6,
+   "position": 5,
    "collections": [
     "italia"
    ],
@@ -300,7 +261,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 7,
+   "position": 6,
    "collections": [
     "italia"
    ],
@@ -339,7 +300,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 8,
+   "position": 7,
    "collections": [
     "middle-eastern"
    ],
@@ -378,7 +339,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 9,
+   "position": 8,
    "collections": [
     "italia"
    ],
@@ -417,7 +378,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 10,
+   "position": 9,
    "collections": [
     "italia"
    ],
@@ -456,7 +417,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 11,
+   "position": 10,
    "collections": [
     "middle-eastern"
    ],
@@ -495,7 +456,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 12,
+   "position": 11,
    "collections": [
     "italia"
    ],
@@ -534,7 +495,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 13,
+   "position": 12,
    "collections": [
     "middle-eastern"
    ],
@@ -573,7 +534,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 14,
+   "position": 13,
    "collections": [
     "italia"
    ],
@@ -612,7 +573,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 15,
+   "position": 14,
    "collections": [
     "middle-eastern"
    ],
@@ -651,7 +612,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 16,
+   "position": 15,
    "collections": [
     "italia"
    ],
@@ -690,7 +651,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 17,
+   "position": 16,
    "collections": [
     "italia"
    ],
@@ -734,7 +695,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 18,
+   "position": 17,
    "collections": [
     "italia"
    ],
@@ -773,7 +734,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 19,
+   "position": 18,
    "collections": [
     "middle-eastern"
    ],
@@ -812,7 +773,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 20,
+   "position": 19,
    "collections": [
     "italia"
    ],
@@ -851,7 +812,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 21,
+   "position": 20,
    "collections": [
     "italia"
    ],
@@ -890,7 +851,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 22,
+   "position": 21,
    "collections": [
     "italia"
    ],
@@ -929,7 +890,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 23,
+   "position": 22,
    "collections": [
     "italia"
    ],
@@ -968,7 +929,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 24,
+   "position": 23,
    "collections": [
     "turkish"
    ],
@@ -1007,7 +968,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 25,
+   "position": 24,
    "collections": [
     "italia"
    ],
@@ -1046,7 +1007,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 26,
+   "position": 25,
    "collections": [
     "italia"
    ],
@@ -1085,7 +1046,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 27,
+   "position": 26,
    "collections": [
     "italia"
    ],
@@ -1124,7 +1085,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 28,
+   "position": 27,
    "collections": [
     "turkish"
    ],
@@ -1163,7 +1124,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 29,
+   "position": 28,
    "collections": [
     "turkish"
    ],
@@ -1202,7 +1163,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 30,
+   "position": 29,
    "collections": [
     "turkish"
    ],
@@ -1241,7 +1202,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 31,
+   "position": 30,
    "collections": [
     "turkish"
    ],
@@ -1280,7 +1241,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 32,
+   "position": 31,
    "collections": [
     "italia"
    ],
@@ -1319,7 +1280,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 33,
+   "position": 32,
    "collections": [
     "italia"
    ],
@@ -1358,7 +1319,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 34,
+   "position": 33,
    "collections": [
     "italia"
    ],
@@ -1397,7 +1358,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 35,
+   "position": 34,
    "collections": [
     "italia"
    ],
@@ -1436,7 +1397,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 36,
+   "position": 35,
    "collections": [
     "italia"
    ],
@@ -1475,7 +1436,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 37,
+   "position": 36,
    "collections": [
     "italia"
    ],
@@ -1514,7 +1475,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 38,
+   "position": 37,
    "collections": [
     "middle-eastern"
    ],
@@ -1553,7 +1514,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 39,
+   "position": 38,
    "collections": [
     "middle-eastern"
    ],
@@ -1592,7 +1553,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 40,
+   "position": 39,
    "collections": [
     "italia"
    ],
@@ -1631,7 +1592,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 41,
+   "position": 40,
    "collections": [
     "italia"
    ],
@@ -1670,7 +1631,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 42,
+   "position": 41,
    "collections": [
     "italia"
    ],
@@ -1709,7 +1670,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 43,
+   "position": 42,
    "collections": [
     "middle-eastern"
    ],
@@ -1748,7 +1709,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 44,
+   "position": 43,
    "collections": [
     "italia"
    ],
@@ -1787,7 +1748,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 45,
+   "position": 44,
    "collections": [
     "middle-eastern"
    ],
@@ -1826,7 +1787,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 46,
+   "position": 45,
    "collections": [
     "italia"
    ],
@@ -1865,7 +1826,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 47,
+   "position": 46,
    "collections": [
     "italia"
    ],
@@ -1904,7 +1865,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 48,
+   "position": 47,
    "collections": [
     "italia"
    ],
@@ -1943,7 +1904,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 49,
+   "position": 48,
    "collections": [
     "turkish"
    ],
@@ -1982,7 +1943,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 50,
+   "position": 49,
    "collections": [
     "turkish"
    ],
@@ -2021,7 +1982,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 51,
+   "position": 50,
    "collections": [
     "turkish"
    ],
@@ -2060,7 +2021,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 52,
+   "position": 51,
    "collections": [
     "italia"
    ],
@@ -2099,7 +2060,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 53,
+   "position": 52,
    "collections": [
     "italia"
    ],
@@ -2138,7 +2099,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 54,
+   "position": 53,
    "collections": [
     "italia"
    ],
@@ -2177,7 +2138,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 55,
+   "position": 54,
    "collections": [
     "middle-eastern"
    ],
@@ -2216,7 +2177,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 56,
+   "position": 55,
    "collections": [
     "turkish"
    ],
@@ -2255,7 +2216,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 57,
+   "position": 56,
    "collections": [
     "italia"
    ],
@@ -2294,7 +2255,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 58,
+   "position": 57,
    "collections": [
     "middle-eastern"
    ],
@@ -2333,7 +2294,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 59,
+   "position": 58,
    "collections": [
     "middle-eastern"
    ],
@@ -2372,7 +2333,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 60,
+   "position": 59,
    "collections": [
     "italia"
    ],
@@ -2411,7 +2372,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 61,
+   "position": 60,
    "collections": [
     "middle-eastern"
    ],
@@ -2450,7 +2411,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 62,
+   "position": 61,
    "collections": [
     "turkish"
    ],
@@ -2489,7 +2450,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 63,
+   "position": 62,
    "collections": [
     "turkish"
    ],
@@ -2538,7 +2499,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 64,
+   "position": 63,
    "collections": [
     "turkish"
    ],
@@ -2577,7 +2538,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 65,
+   "position": 64,
    "collections": [
     "middle-eastern"
    ],
@@ -2616,7 +2577,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 66,
+   "position": 65,
    "collections": [
     "turkish"
    ],
@@ -2655,7 +2616,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 67,
+   "position": 66,
    "collections": [
     "italia"
    ],
@@ -2694,7 +2655,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 68,
+   "position": 67,
    "collections": [
     "italia"
    ],
@@ -2733,7 +2694,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 69,
+   "position": 68,
    "collections": [
     "italia"
    ],
@@ -2772,7 +2733,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 70,
+   "position": 69,
    "collections": [
     "italia"
    ],
@@ -2811,7 +2772,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 71,
+   "position": 70,
    "collections": [
     "italia"
    ],
@@ -2850,7 +2811,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 72,
+   "position": 71,
    "collections": [
     "italia"
    ],
@@ -2889,7 +2850,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 73,
+   "position": 72,
    "collections": [
     "italia"
    ],
@@ -2928,7 +2889,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 74,
+   "position": 73,
    "collections": [
     "italia"
    ],
@@ -2967,7 +2928,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 75,
+   "position": 74,
    "collections": [
     "italia"
    ],
@@ -3006,7 +2967,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 76,
+   "position": 75,
    "collections": [
     "italia"
    ],
@@ -3045,7 +3006,7 @@
    "gemstone_details": null,
    "testing_available": false,
    "certification_info": null,
-   "position": 77,
+   "position": 76,
    "collections": [
     "italia"
    ],
@@ -3089,7 +3050,7 @@
    "description": "Confident, sculptural silhouettes with hammered and brushed finishes, drawing on the regal jewellery traditions of the Middle East.",
    "image_url": null,
    "position": 3,
-   "product_count": 18
+   "product_count": 17
   }
  ],
  "gemstones": [],
