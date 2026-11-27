@@ -55,10 +55,10 @@ There is no server: the dashboard signs in with a GitHub fine-grained access key
 
 `firebase.json` holds the hosting config (every path falls back to `index.html`, long caching for `assets/`). GitHub Pages keeps deploying alongside; turn it off in Settings → Pages once the domain is live.
 
-**With an API:** the repository also includes a Render blueprint:
+**With an API (full shop: orders, receipts, article numbers, accounts):** the repository also includes a Render blueprint:
 
-1. Create a free PostgreSQL database on Neon and copy its connection string.
-2. In Render, create a Blueprint from this repository using `render.yaml` and paste the Neon connection string as `DATABASE_URL`. On every start the API runs `database` `bootstrap`: it applies the schema and seeds sample data only if the database is empty. The owner dashboard password is generated as `SEED_ADMIN_PASSWORD` (Render → sultane-api → Environment).
+1. Create a free PostgreSQL database on Neon (region: AWS Singapore) and copy its connection string.
+2. In Render, create a Blueprint from this repository using `render.yaml` and paste the Neon connection string as `DATABASE_URL`. The blueprint uses the Starter plan in Singapore with a 1 GB disk for uploads (receipts and dashboard photos survive restarts). On every start the API runs `database` `bootstrap`: it applies the schema (also upgrading an existing database) and, only if the database is empty, loads the real shop catalogue from `frontend/src/data/catalogue.json` (`npm run import-catalogue`) plus the owner account and default settings. Set `SEED_SAMPLES=yes` to load the sample catalogue instead. The owner dashboard password is generated as `SEED_ADMIN_PASSWORD` (Render → sultane-api → Environment). Once the API is live the owner works in its dashboard (`/admin/login`), which includes products, New Arrivals launch dates and the New Arrivals period (Site settings → Homepage); the GitHub-key dashboard is only used by the catalogue-only site.
 3. Note the Render API URL (e.g. `https://sultane-api.onrender.com`).
 4. In GitHub repository Settings → Secrets and variables → Actions → Variables, add `VITE_API_URL` with the Render API URL plus `/api`, for example `https://sultane-api.onrender.com/api`.
 5. In GitHub repository Settings → Pages, select **GitHub Actions** as the source. Pushes to `main` will deploy the frontend at `https://hashirch.github.io/sultane/`.
@@ -74,6 +74,8 @@ Free services can sleep when idle and have usage limits. The API's local upload 
 | Homepage: Bestsellers, Premium, Men's, Customise, Story, collection tiles, footer | `pages/Home.tsx` |
 | Nav: Necklaces, Earrings, Bracelets, Men's (Chains/Rings/Bracelets), Rings, Collections (Italia/Turkish/Middle Eastern), Premium, Customized Jewellery, About Us + search, account, cart, **Verify Your Piece** | `components/Header.tsx` |
 | Products in several places at once; filters by type, collection, gemstone | `product_collections` table, `pages/Shop.tsx` |
+| New Arrivals: launch date per product, period in Site settings; section hides when empty | `products.launched_at`, `lib/newArrivals.ts` |
+| New Arrivals: launch date per product, period in Site settings; section hides itself when empty | `products.launched_at`, `lib/newArrivals.ts` |
 | Made-to-order: publish / pause / unpublish, per-product production time, no stock counts | `products.status`, `production_time` |
 | “925 Sterling Silver” tag only when confirmed per product | `products.purity_925` |
 | Premium gemstone details + optional **Rs. 799** testing, ticked by default, saved on the order | product page, `order_items.gemstone_testing` / `testing_fee_pkr` |
@@ -97,7 +99,7 @@ Free services can sleep when idle and have usage limits. The API's local upload 
 `backend/test/acceptance.mjs` runs 71 checks mapped to §25 *Acceptance Criteria* against a running API and a **freshly seeded** database:
 
 ```bash
-cd database && npm run reset && npm run seed
+cd database && npm run reset && npm run seed     # sample catalogue (SEED_SAMPLES defaults to yes)
 cd ../backend && npm run dev            # in another terminal
 API_URL=http://localhost:4000 npm run test:acceptance
 ```

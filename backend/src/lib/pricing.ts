@@ -72,6 +72,8 @@ export async function priceItems(items: CartItem[], db: Queryable = pool): Promi
     const product = rows.find((p: { id: string }) => p.id === item.productId)
     if (!product || product.status === 'draft') throw new HttpError(400, 'One of the pieces in your bag is no longer available')
     if (product.status === 'paused') throw new HttpError(400, `${product.name} is temporarily unavailable to order`)
+    // Rs. 0 means "Price on request": the price is agreed on WhatsApp, never at checkout.
+    if (product.price_pkr <= 0) throw new HttpError(400, `${product.name} is priced on request — please ask us on WhatsApp`)
     if (product.sizes?.length) {
       if (!item.size || !product.sizes.includes(item.size)) throw new HttpError(400, `Please choose a valid size for ${product.name}`)
     }

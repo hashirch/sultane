@@ -22,6 +22,7 @@ const SCHEMAS = {
   hero_poster_url: z.string().max(500),
   loyalty_percent: z.number().int().min(1).max(50),
   loyalty_valid_days: z.number().int().min(1).max(730),
+  new_arrival_days: z.number().int().min(1).max(90),
   announcement: z.string().max(300),
   about_story: z.string().max(10000),
   faqs: z.array(z.object({ q: z.string().min(1).max(300), a: z.string().min(1).max(3000) })).max(60),

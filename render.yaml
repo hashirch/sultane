@@ -2,17 +2,26 @@ services:
   - type: web
     name: sultane-api
     runtime: node
-    plan: free
+    # Starter (~$7/month) stays awake and can keep a disk; the free plan sleeps and loses uploads.
+    plan: starter
+    # Closest Render region to Pakistan — create the Neon database in AWS Singapore too.
+    region: singapore
     # --include=dev: NODE_ENV=production would otherwise skip TypeScript/tsx needed to build and migrate.
     buildCommand: npm ci --include=dev --prefix database && npm ci --include=dev --prefix backend && npm run build --prefix backend
-    # bootstrap applies the schema and seeds sample data only when the database is empty.
+    # bootstrap applies the schema and, only on an empty database, loads the 78-product shop catalogue and the owner account.
     startCommand: npm run bootstrap --prefix database && npm run start --prefix backend
     healthCheckPath: /health
+    # Payment receipts, customer reference images and photos uploaded in the dashboard.
+    disk:
+      name: uploads
+      mountPath: /opt/render/project/src/backend/uploads
+      sizeGB: 1
     envVars:
       - key: DATABASE_URL
         sync: false
       - key: JWT_SECRET
         generateValue: true
+      # Websites allowed to use the API (comma separated): the shop's domain and the GitHub Pages copy.
       - key: CORS_ORIGIN
         value: https://hashirch.github.io
       - key: SEED_ADMIN_EMAIL

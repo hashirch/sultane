@@ -107,7 +107,16 @@ const POLICIES = {
   policy_terms: `Prices are in Pakistani Rupees (PKR). An order is confirmed once your bank-transfer payment has been manually verified by our team; production begins only after verification.\n\nCustomisation requests are not orders. A customised piece is only made after you approve a quotation shared on WhatsApp and pay the approved amount.\n\nMaterial and gemstone details are stated per product. "925 Sterling Silver" appears only on pieces whose material has been confirmed.`,
 }
 
+// SEED_SAMPLES=no seeds only the owner account and default settings — used on a
+// real shop, whose products come from import-catalogue.ts instead.
+const SAMPLES = process.env.SEED_SAMPLES !== 'no'
+
 async function seed() {
+  if (SAMPLES) await seedSampleCatalogue()
+  await seedSettingsAndOwner()
+}
+
+async function seedSampleCatalogue() {
   console.log('Seeding collections...')
   for (const c of collections) {
     await pool.query(
@@ -154,7 +163,9 @@ async function seed() {
       }
     }
   }
+}
 
+async function seedSettingsAndOwner() {
   console.log('Seeding default settings...')
   const defaults: [string, unknown][] = [
     ['whatsapp_number', '923000000000'],
@@ -166,6 +177,7 @@ async function seed() {
     ['hero_poster_url', ''],
     ['loyalty_percent', 5],
     ['loyalty_valid_days', 90],
+    ['new_arrival_days', 14],
     ['announcement', 'Free delivery within Karachi · Made to order · Every piece registered with a unique article number'],
     ['about_story', 'SULTANÉ was born from a love of regal jewellery traditions — the fluid sculpture of Italy, the intricate motifs of Türkiye and the bold silhouettes of the Middle East — reimagined in silver for today.\n\nEvery piece is made to order by our jewellery maker once your payment is verified. We would rather take the time to make your piece properly than promise a dispatch date we cannot keep.\n\nEach purchased piece receives its own article number, recorded in our registry and printed on a SULTANÉ authenticity card, so the story of your jewellery stays with it.'],
     ['faqs', FAQS],
@@ -175,10 +187,12 @@ async function seed() {
     await pool.query(`INSERT INTO settings (key, value) VALUES ($1, $2) ON CONFLICT (key) DO NOTHING`, [key, JSON.stringify(value)])
   }
 
-  await pool.query(
-    `INSERT INTO promo_codes (code, description, kind, discount_type, discount_value, max_redemptions)
-     VALUES ('WELCOME10', '10% off launch offer', 'campaign', 'percent', 10, 100) ON CONFLICT DO NOTHING`,
-  )
+  if (SAMPLES) {
+    await pool.query(
+      `INSERT INTO promo_codes (code, description, kind, discount_type, discount_value, max_redemptions)
+       VALUES ('WELCOME10', '10% off launch offer', 'campaign', 'percent', 10, 100) ON CONFLICT DO NOTHING`,
+    )
+  }
 
   console.log('Seeding owner admin account...')
   const email = process.env.SEED_ADMIN_EMAIL ?? 'owner@sultane.pk'

@@ -98,6 +98,8 @@ const productSchema = z.object({
   certificationInfo: nullableText,
   position: z.number().int().default(0),
   collections: z.array(z.string()).default([]),
+  // Shows the product in New Arrivals for `new_arrival_days` from this date; null = not new.
+  launchedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Use a date like 2026-11-27').nullable().optional(),
 })
 
 function toColumns(p: Partial<z.infer<typeof productSchema>>) {
@@ -123,6 +125,7 @@ function toColumns(p: Partial<z.infer<typeof productSchema>>) {
     testing_available: p.testingAvailable,
     certification_info: p.certificationInfo,
     position: p.position,
+    launched_at: p.launchedAt,
   }
   // Testing can only be offered on Premium pieces that actually list a gemstone.
   if (p.testingAvailable && (p.isPremium === false || p.gemstoneType === null)) cols.testing_available = false

@@ -262,6 +262,10 @@ CREATE TABLE IF NOT EXISTS settings (
   value JSONB NOT NULL
 );
 
+-- Additions after the first release (idempotent, so `migrate` upgrades a live database).
+-- launched_at: the product shows in New Arrivals for `new_arrival_days` days from this date.
+ALTER TABLE products ADD COLUMN IF NOT EXISTS launched_at DATE;
+
 CREATE INDEX IF NOT EXISTS idx_products_status ON products(status);
 CREATE INDEX IF NOT EXISTS idx_product_collections_slug ON product_collections(collection_slug);
 CREATE INDEX IF NOT EXISTS idx_orders_status ON orders(order_status, payment_status);

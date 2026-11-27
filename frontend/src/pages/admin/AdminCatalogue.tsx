@@ -8,17 +8,26 @@ import { useAuth } from '../../context/AuthContext'
 import { useSettings } from '../../context/SettingsContext'
 import { admin } from '../../lib/api'
 import { loadCollections, useCollections } from '../../lib/useCollections'
-import { formatPKR } from '../../lib/format'
+import { formatPKR, priceLabel } from '../../lib/format'
+import { DEFAULT_NEW_ARRIVAL_DAYS, isNewArrival } from '../../lib/newArrivals'
 import { CATEGORIES, type Category, type Product, type ProductStatus } from '../../data/types'
 
 const STATUS_LABEL: Record<ProductStatus, string> = { active: 'Published', paused: 'Sales paused', draft: 'Unpublished (draft)' }
 const STATUS_TONE: Record<ProductStatus, 'good' | 'warn' | 'neutral'> = { active: 'good', paused: 'warn', draft: 'neutral' }
+
+/** Today as YYYY-MM-DD in the owner's own time zone. */
+function today() {
+  const d = new Date()
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
+}
 
 function List() {
   const { token } = useAuth()
   const navigate = useNavigate()
   const collections = useCollections()
   const { run, message } = useAdminAction()
+  const { settings } = useSettings()
+  const newDays = Number(settings.new_arrival_days) || DEFAULT_NEW_ARRIVAL_DAYS
   const [products, setProducts] = useState<Product[] | null>(null)
   const [search, setSearch] = useState('')
   const [filter, setFilter] = useState('')
@@ -34,11 +43,13 @@ function List() {
         if (filter === 'mens' && !p.isMens) return false
         if (filter === 'premium' && !p.isPremium) return false
         if (filter === 'bestseller' && !p.isBestseller) return false
+        if (filter === 'new' && !isNewArrival(p, newDays)) return false
+        if (filter === 'noprice' && p.price > 0) return false
         if (['active', 'paused', 'draft'].includes(filter) && p.status !== filter) return false
         if (filter.startsWith('c:') && !p.collections.includes(filter.slice(2))) return false
         return true
       }),
-    [products, search, filter],
+    [products, search, filter, newDays],
   )
 
   return (
@@ -51,6 +62,8 @@ function List() {
           <option value="active">Published</option>
           <option value="paused">Sales paused</option>
           <option value="draft">Unpublished</option>
+          <option value="new">New Arrivals</option>
+          <option value="noprice">Price on request (Rs. 0)</option>
           <option value="bestseller">Bestsellers</option>
           <option value="premium">Premium</option>
           <option value="mens">Men's</option>
@@ -67,9 +80,10 @@ function List() {
               <div className="min-w-0 flex-1">
                 <div className="font-medium text-sm truncate">{p.name}</div>
                 <div className="text-xs text-stone">{p.sku} · {p.category}</div>
-                <div className="text-sm mt-1">{formatPKR(p.price)}</div>
+                <div className="text-sm mt-1">{priceLabel(p.price)}</div>
                 <div className="flex flex-wrap gap-1 mt-1.5">
                   <Badge tone={STATUS_TONE[p.status]}>{STATUS_LABEL[p.status]}</Badge>
+                  {isNewArrival(p, newDays) && <Badge tone="rose">New</Badge>}
                   {p.isPremium && <Badge tone="rose">Premium</Badge>}
                   {p.isMens && <Badge tone="dark">Men's</Badge>}
                   {p.images.length === 0 && <Badge tone="warn">No photos</Badge>}
@@ -106,13 +120,14 @@ interface Form {
   certificationInfo: string
   position: string
   collections: string[]
+  launchedAt: string
 }
 
 const EMPTY: Form = {
   name: '', sku: '', slug: '', category: 'Necklaces', pricePkr: '', description: '', sizes: '', status: 'draft',
   productionTime: '7–10 working days', isBestseller: false, isPremium: false, isMens: false, allowCustomisation: true,
   purity925: false, materialNote: '', gemstoneType: '', gemstoneOrigin: '', gemstoneDetails: '', testingAvailable: false,
-  certificationInfo: '', position: '0', collections: [],
+  certificationInfo: '', position: '0', collections: [], launchedAt: '',
 }
 
 function toForm(p: Product): Form {
@@ -122,7 +137,7 @@ function toForm(p: Product): Form {
     isPremium: p.isPremium, isMens: p.isMens, allowCustomisation: p.allowCustomisation, purity925: p.purity925,
     materialNote: p.materialNote ?? '', gemstoneType: p.gemstone?.type ?? '', gemstoneOrigin: p.gemstone?.origin ?? '',
     gemstoneDetails: p.gemstone?.details ?? '', testingAvailable: p.testingAvailable, certificationInfo: p.certificationInfo ?? '',
-    position: String(p.position), collections: p.collections,
+    position: String(p.position), collections: p.collections, launchedAt: p.launchedAt ?? '',
   }
 }
 
@@ -134,7 +149,9 @@ function Editor({ id }: { id: string }) {
   const collections = useCollections()
   const { run, busy, message, setMessage } = useAdminAction()
   const [product, setProduct] = useState<Product | null>(null)
-  const [f, setF] = useState<Form>(EMPTY)
+  // A new product starts in New Arrivals from today; the owner can change or clear it.
+  const [f, setF] = useState<Form>(() => ({ ...EMPTY, launchedAt: isNew ? today() : '' }))
+  const newDays = Number(settings.new_arrival_days) || DEFAULT_NEW_ARRIVAL_DAYS
   const fileRef = useRef<HTMLInputElement>(null)
   const readOnly = me?.role === 'viewer'
 
@@ -158,7 +175,7 @@ function Editor({ id }: { id: string }) {
       purity925: f.purity925, materialNote: f.materialNote || null, gemstoneType: f.gemstoneType || null,
       gemstoneOrigin: f.gemstoneType && f.gemstoneOrigin ? f.gemstoneOrigin : null, gemstoneDetails: f.gemstoneDetails || null,
       testingAvailable: f.testingAvailable, certificationInfo: f.certificationInfo || null, position: Number(f.position) || 0,
-      collections: f.collections,
+      collections: f.collections, launchedAt: f.launchedAt || null,
     }
     const saved = await run(() => (isNew ? admin.createProduct(token!, body) : admin.updateProduct(token!, id, body)), isNew ? 'Product created — now add photographs.' : 'Saved')
     if (!saved) return
@@ -229,7 +246,7 @@ function Editor({ id }: { id: string }) {
                   {CATEGORIES.map((c) => <option key={c}>{c}</option>)}
                 </select>
               </label>
-              <label><Label>Price (PKR) *</Label><input required type="number" min={0} value={f.pricePkr} onChange={(e) => set('pricePkr', e.target.value)} className={inputCls} /></label>
+              <label><Label>Price (PKR) *</Label><input required type="number" min={0} placeholder="0 = Price on request" value={f.pricePkr} onChange={(e) => set('pricePkr', e.target.value)} className={inputCls} /></label>
               <label className="sm:col-span-2"><Label>Description</Label><textarea rows={4} value={f.description} onChange={(e) => set('description', e.target.value)} className={inputCls} /></label>
               <label><Label hint="Comma separated, e.g. 6, 7, 8 — leave blank if one size">Standard sizes</Label><input value={f.sizes} onChange={(e) => set('sizes', e.target.value)} className={inputCls} /></label>
               <label><Label hint="Shown on the product page">Estimated production time *</Label><input required value={f.productionTime} onChange={(e) => set('productionTime', e.target.value)} className={inputCls} /></label>
@@ -296,6 +313,24 @@ function Editor({ id }: { id: string }) {
               {check('allowCustomisation', 'Show “Customise This Design — Request Price”')}
               <label className="block pt-2"><Label hint="Lower numbers appear first">Display order</Label><input type="number" value={f.position} onChange={(e) => set('position', e.target.value)} className={inputCls} /></label>
             </div>
+          </Panel>
+
+          <Panel title="New Arrivals">
+            <label className="block"><Label hint={`Shown in New Arrivals for ${newDays} days from this date (set the number of days in Site settings → Homepage). Leave blank to keep it out.`}>Launch date</Label>
+              <input type="date" value={f.launchedAt} onChange={(e) => set('launchedAt', e.target.value)} className={inputCls} />
+            </label>
+            <div className="flex flex-wrap gap-3 mt-3 text-xs">
+              <button type="button" className="underline" onClick={() => set('launchedAt', today())}>Show as new from today</button>
+              {f.launchedAt && <button type="button" className="underline text-stone" onClick={() => set('launchedAt', '')}>Remove from New Arrivals</button>}
+            </div>
+            {f.launchedAt && (
+              <p className="text-xs text-stone mt-2">
+                {isNewArrival({ launchedAt: f.launchedAt, status: f.status } as Product, newDays)
+                  ? 'Showing in New Arrivals now.'
+                  : f.status === 'draft' ? 'Will show once the product is published.' : f.launchedAt > today() ? 'Will show from the launch date.' : 'The New Arrivals period has ended.'}
+                {f.launchedAt !== (product?.launchedAt ?? '') && ' Save to apply.'}
+              </p>
+            )}
           </Panel>
 
           <Panel title="Photographs">

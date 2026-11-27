@@ -118,6 +118,12 @@ export default function AdminSettings() {
 
         {tab === 'Homepage' && (
           <div className="grid lg:grid-cols-2 gap-6">
+            <Panel title="New Arrivals">
+              <label className="block"><Label hint="How long a newly launched product stays in the New Arrivals section (1–90). The section hides itself when nothing is new.">Days a product counts as new</Label>
+                <input type="number" min={1} max={90} value={Number(s.new_arrival_days) || 14} onChange={(e) => set('new_arrival_days', Number(e.target.value))} className={inputCls} />
+              </label>
+              {saveBtn(['new_arrival_days'])}
+            </Panel>
             <Panel title="Hero video">
               {s.hero_video_url ? (
                 <video src={assetUrl(s.hero_video_url)} muted loop autoPlay playsInline className="w-full aspect-video object-cover bg-noir mb-3" />
