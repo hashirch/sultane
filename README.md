@@ -46,6 +46,15 @@ Owner dashboard: `/admin/login` — the seed prints the owner login (default `ow
 
 There is no server: the dashboard signs in with a GitHub fine-grained access key (only this repository, *Contents: Read and write*, *Actions: Read-only*) and each save is one commit to `frontend/src/data/catalogue.json` plus any new photos in `frontend/public/products/` (1000px) and `frontend/public/products/sm/` (480px). The Pages workflow then republishes the site in about a minute. `catalogue.json` is the single source of truth for the static site — edit it through the dashboard. The backend's `database/seed.ts` keeps the sample products the acceptance tests rely on.
 
+**Firebase Hosting with your own domain:** `.github/workflows/deploy-firebase.yml` builds the site for the root path (`VITE_BASE=/`) and deploys it to Firebase on every push to `main`, including dashboard saves. It stays off until both of these exist in GitHub → Settings → Secrets and variables → Actions:
+
+1. In the Firebase console, create a project (the free Spark plan is enough) and note its project ID.
+2. Google Cloud console → IAM & Admin → Service accounts → pick the project → create a service account with the roles *Firebase Hosting Admin*, *API Keys Viewer* and *Cloud Run Viewer*, then Keys → Add key → JSON.
+3. Add the Actions **variable** `FIREBASE_PROJECT_ID` (the project ID) and the Actions **secret** `FIREBASE_SERVICE_ACCOUNT` (the whole JSON file's contents). Re-run the workflow or push to deploy.
+4. Firebase console → Hosting → Add custom domain, enter the domain, and add the DNS records it shows at your domain registrar. Firebase issues the HTTPS certificate itself.
+
+`firebase.json` holds the hosting config (every path falls back to `index.html`, long caching for `assets/`). GitHub Pages keeps deploying alongside; turn it off in Settings → Pages once the domain is live.
+
 **With an API:** the repository also includes a Render blueprint:
 
 1. Create a free PostgreSQL database on Neon and copy its connection string.
